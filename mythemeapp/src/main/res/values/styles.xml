@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--CartoonTheme Customization-->
+     <style name="CartoonAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <!-- Customize your theme here. -->
+         <item name="colorPrimary">@color/colorCartoonPrimary</item>
+         <item name="colorPrimaryDark">@color/colorCartoonPrimaryDark</item>
+         <item name="colorAccent">@color/colorCartoonAccent</item>
+         <item name="windowActionBar">false</item>
+         <item name="windowNoTitle">true</item>
+     </style>
+    <!--<style name="CartoonAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CartoonAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+
+    <!--DisneyTheme Customization-->
+    <style name="DisneyAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorDisneyPrimary</item>
+        <item name="colorPrimaryDark">@color/colorDisneyPrimaryDark</item>
+        <item name="colorAccent">@color/colorDisneyAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--<style name="DisneyAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="DisneyAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

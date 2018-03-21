@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212528</color>
+    <color name="colorPrimaryDark">#111516</color>
+    <color name="colorAccent">#007937</color>
+
+
+    <color name="colorCartoonPrimary">#9E9E9E</color>
+    <color name="colorCartoonPrimaryDark">#616161</color>
+    <color name="colorCartoonPrimaryLight">#F5F5F5</color>
+    <color name="colorCartoonAccent">#607D8B</color>
+    <color name="colorCartoonPrimary_text">#212121</color>
+    <color name="colorCartoonSecondary_text">#757575</color>
+    <color name="colorCartoonIcons">#212121</color>
+    <color name="colorCartoonDivider">#BDBDBD</color>
+    <color name="colorCartoonBackground">#FFFAFAFA</color>
+    <color name="colorCartoonForeground">#FF000000</color>
+
+    <color name="colorDisneyPrimary">#3F51B5</color>
+    <color name="colorDisneyPrimaryDark">#303F9F</color>
+    <color name="colorDisneyPrimaryLight">#C5CAE9</color>
+    <color name="colorDisneyAccent">#FF5722</color>
+    <color name="colorDisneyPrimary_text">#212121</color>
+    <color name="colorDisneySecondary_text">#757575</color>
+    <color name="colorDisneyIcons">#FFFFFF</color>
+    <color name="colorDisneyDivider">#BDBDBD</color>
+    <color name="colorDisneyBackground">#fcfdff</color>
+    <color name="colorDisneyForeground">#030303</color>
+
+
+</resources>
