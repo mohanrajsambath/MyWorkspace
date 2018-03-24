@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/firebasedb" />
+            <option value="$PROJECT_DIR$/firebaselistview" />
             <option value="$PROJECT_DIR$/gradlestuff" />
             <option value="$PROJECT_DIR$/mythemeapp" />
           </set>

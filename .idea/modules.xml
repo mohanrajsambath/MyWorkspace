@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebasedb/firebasedb.iml" filepath="$PROJECT_DIR$/firebasedb/firebasedb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firebaselistview/firebaselistview.iml" filepath="$PROJECT_DIR$/firebaselistview/firebaselistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
     </modules>

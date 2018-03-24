@@ -8,6 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
     <!-- Gradle stuff customization theme. -->
     <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         &lt;!&ndash; Customize your theme here. &ndash;&gt;
