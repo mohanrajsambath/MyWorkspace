@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" filepath="$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
       <module fileurl="file://$PROJECT_DIR$/firebasedb/firebasedb.iml" filepath="$PROJECT_DIR$/firebasedb/firebasedb.iml" />
       <module fileurl="file://$PROJECT_DIR$/firebaselistview/firebaselistview.iml" filepath="$PROJECT_DIR$/firebaselistview/firebaselistview.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testmodule/testmodule.iml" filepath="$PROJECT_DIR$/testmodule/testmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uidynamic/uidynamic.iml" filepath="$PROJECT_DIR$/uidynamic/uidynamic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uidynamicref/uidynamicref.iml" filepath="$PROJECT_DIR$/uidynamicref/uidynamicref.iml" />
     </modules>
   </component>
 </project>

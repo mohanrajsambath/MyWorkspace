@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity
 
     SharedPreferences sharedpreferences=null;
     SharedPreferences.Editor editor=null;
+    private ImageView nav_header_imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +43,11 @@ public class MainActivity extends AppCompatActivity
         if(mTheme.length()>0 && mTheme.equals("false")){
             if(mLoginvalue.length()>0) {
 
-                if (mLoginvalue.equalsIgnoreCase("joseph@mailinator.com")) {
-                    Utils.changeToTheme(this, Utils.THEME_CARTOON);
+                if (mLoginvalue.equalsIgnoreCase("admin@hd.com")) {
+                    Utils.changeToTheme(this, Utils.THEME_HD);
                     //editor.clear();
-                } else if (mLoginvalue.equalsIgnoreCase("william@mailinator.com")) {
-                    Utils.changeToTheme(this, Utils.THEME_DISNEY);
+                } else if (mLoginvalue.equalsIgnoreCase("admin@ups.com")) {
+                    Utils.changeToTheme(this, Utils.THEME_UPS);
                 } else {
                     Utils.changeToTheme(this, Utils.THEME_DEFAULT);
                 }
@@ -54,6 +57,11 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
+        initViews();
+
+    }
+
+    private void initViews() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -71,6 +79,7 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);

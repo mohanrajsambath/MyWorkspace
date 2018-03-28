@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UIDynamic</string>
+    <string name="image_content_desc">ImageDesc</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <item name="navigation_drawer_menu_inbox" type="integer">1</item>
+    <item name="navigation_drawer_menu_discover_channels" type="integer">2</item>
+    <item name="navigation_drawer_menu_directory" type="integer">3</item>
+    <item name="navigation_drawer_menu_programs" type="integer">4</item>
+    <item name="navigation_drawer_menu_clips" type="integer">5</item>
+    <item name="navigation_drawer_menu_clipsTorecord" type="integer">6</item>
+    <item name="navigation_drawer_menu_vmail" type="integer">7</item>
+    <item name="navigation_drawer_menu_settings" type="integer">8</item>
+    <item name="navigation_drawer_menu_uploading" type="integer">9</item>
+    <item name="navigation_drawer_menu_about_cyrano" type="integer">10</item>
+
+    <string name="nav_inbox">Inbox</string>
+    <string name="nav_discover_channel">Discover channels</string>
+    <string name="nav_your_programs">Your programs</string>
+    <string name="nav_your_clips">Your clips</string>
+    <string name="nav_clips_to_reocrd">Clips to record</string>
+    <string name="nav_send_message">vMail</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_uploads">Uploading</string>
+    <string name="nav_directory">Directory</string>
+    <string name="nav_security">My Security</string>
+    <string name="nav_signout">Logout</string>
+    <string name="nav_about_cyrano">About Cyrano</string>
+</resources>

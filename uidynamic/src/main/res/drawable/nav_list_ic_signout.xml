@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. Vijay Global Services
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="48dp"
+        android:height="48dp"
+        android:viewportHeight="612"
+        android:viewportWidth="612">
+
+    <path
+        android:fillColor="@color/toolbar_text_color"
+        android:pathData="M 222.545 319.909 L 577.228 319.909 L 500.728 445.091 L 528.546 445.091 L 612 306 L 528.546 166.909 L 500.728 166.909 L 577.228 292.146 L 222.545 292.146 Z"/>
+    <path
+        android:fillColor="@color/toolbar_text_color"
+        android:pathData="M 0 612 L 417.272 612 L 417.272 431.182 L 389.454 431.182 L 389.454 584.182 L 27.818 584.182 L 27.818 27.818 L 389.454 27.818 L 389.454 180.818 L 417.272 180.818 L 417.272 0 L 0 0 Z"/>
+</vector>

@@ -8,10 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MaterialThemeDemo" />
             <option value="$PROJECT_DIR$/firebasedb" />
             <option value="$PROJECT_DIR$/firebaselistview" />
             <option value="$PROJECT_DIR$/gradlestuff" />
             <option value="$PROJECT_DIR$/mythemeapp" />
+            <option value="$PROJECT_DIR$/testmodule" />
+            <option value="$PROJECT_DIR$/uidynamic" />
+            <option value="$PROJECT_DIR$/uidynamicref" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

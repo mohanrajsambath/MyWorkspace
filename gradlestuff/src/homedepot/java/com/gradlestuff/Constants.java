@@ -1,7 +1,7 @@
 package com.gradlestuff;
 
  /*
- * Copyright (c) 2018. Created by Mohanraj.S,Innobot Systems on 17/3/18 for MyWorkspace
+ * Copyright (c) 2018. Created by Mohanraj.S, on 17/3/18 for MyWorkspace
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at

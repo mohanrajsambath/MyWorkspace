@@ -1,0 +1,65 @@
+<!-- @formatter:off -->
+<resources>
+    <!-- App -->
+    <string name="app_name">Material Themes Made Easy</string>
+
+    <!-- Home -->
+    <string name="home_tab_xml">XML</string>
+    <string name="home_tab_code">Code</string>
+
+    <!-- Set Theme Dialog -->
+    <string name="set_theme_dialog_title">Set Theme</string>
+    <string name="set_theme_dialog_button_positive">Set Theme</string>
+    <string name="set_theme_dialog_button_negative">Cancel</string>
+
+    <!-- Material Theme Elements -->
+    <string name="material_theme_red">Red</string>
+    <string name="material_theme_orange">Orange</string>
+    <string name="material_theme_lime">Lime</string>
+    <string name="material_theme_green">Green</string>
+    <string name="material_theme_teal">Teal</string>
+    <string name="material_theme_blue">Blue</string>
+    <string name="material_theme_purple">Purple</string>
+    <string name="material_theme_current_theme">Current Theme</string>
+    <string name="material_theme_green_theme">Green Theme</string>
+    <string name="material_theme_blue_theme">Blue Theme</string>
+    <string name="material_theme_buttons_raised">Buttons: Raised (Default)</string>
+    <string name="material_theme_buttons_no_raise">Buttons: No Raise</string>
+    <string name="material_theme_buttons_flat">Buttons: Flat</string>
+    <string name="material_theme_default">Default</string>
+    <string name="material_theme_colored">Colored</string>
+    <string name="material_theme_colored_text">Colored Text</string>
+    <string name="material_theme_selectable_items_rect">Selectable Items: Rectangle</string>
+    <string name="material_theme_selectable_items_rounded_rect">Selectable Items: Rounded Rectangle</string>
+    <string name="material_theme_text_fields">Text Fields</string>
+    <string name="material_theme_radio_buttons">Radio Buttons</string>
+    <string name="material_theme_checkboxes">Checkboxes</string>
+    <string name="material_theme_switches">Switches</string>
+    <string name="material_theme_spinners">Dropdown Spinners</string>
+    <string name="material_theme_sliders">Sliders</string>
+    <string name="material_theme_progress_indicators">Progress Indicators</string>
+    <string name="material_theme_icons">Icons</string>
+    <string name="material_theme_snackbars">Snackbars</string>
+    <string name="material_theme_dialogs">Dialogs</string>
+    <string name="material_theme_dialog_button_positive">Positive</string>
+    <string name="material_theme_dialog_button_negative">Negative</string>
+
+    <!-- Spinners -->
+    <string name="spinner_item_1">One</string>
+    <string name="spinner_item_2">Two</string>
+    <string name="spinner_item_3">Three</string>
+    <string name="spinner_item_4">Four</string>
+    <string name="spinner_item_5">Five</string>
+
+    <string-array name="spinner_items_array">
+        <item>@string/spinner_item_1</item>
+        <item>@string/spinner_item_2</item>
+        <item>@string/spinner_item_3</item>
+        <item>@string/spinner_item_4</item>
+        <item>@string/spinner_item_5</item>
+    </string-array>
+
+    <!-- Snackbars -->
+    <string name="snackbar_action">Action</string>
+
+</resources>
