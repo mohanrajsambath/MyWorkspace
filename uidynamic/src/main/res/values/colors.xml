@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#121516</color>
+    <color name="colorPrimaryDark">#121516</color>
+    <color name="colorAccent">#00A659</color>
+
+
+    <color name="colorHDPrimary">#f96302</color>
+    <color name="colorHDPrimaryDark">#ED7225</color>
+    <color name="colorHDAccent">#f96302</color>
+
+
+    <color name="colorUPSPrimary">#3F51B5</color>
+    <color name="colorUPSPrimaryDark">#303F9F</color>
+    <color name="colorUPSPrimaryLight">#C5CAE9</color>
+    <color name="colorUPSAccent">#FF5722</color>
+
+
+    <color name="navigation_bg_color">#121516</color>
+    <color name="fab_outline">#02d25f</color>
+    <color name="toolbar_background">#004a24</color>
+    <color name="toolbar_text_color">#FCFCFC</color>
+    <color name="fragments_bg_color">#121516</color>
+    <color name="fab_background">#00A659</color>
+    <color name="navigation_divider">#194931</color>
+    <color name="settings_text_color">#757575</color>
+
+</resources>

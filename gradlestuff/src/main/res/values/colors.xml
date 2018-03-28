@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorPrimary">#01a64c</color>
+    <color name="colorPrimaryDark">#007937</color>
+    <color name="colorAccent">#00da63</color>
+
+    <!--<color name="colorPrimary">#2f5069</color>
+    <color name="colorPrimaryDark">#15272b</color>
+    <color name="colorAccent">#009bbf</color>-->
+
+    <color name="colorHomedepotPrimary">#fc7100</color>
+    <color name="colorHomedepotPrimaryDark">#d16c19</color>
+    <color name="colorHomedepotPrimaryLight">#212121</color>
+    <color name="colorHomedepotAccent">#9e826c</color>
+    <color name="colorHomedepotPrimary_text">#212121</color>
+    <color name="colorHomedepotSecondary_text">#757575</color>
+    <color name="colorHomedepotIcons">#212121</color>
+    <color name="colorHomedepotDivider">#BDBDBD</color>
+    <color name="colorHomedepotBackground">#FFFAFAFA</color>
+    <color name="colorHomedepotForeground">#FF000000</color>
+
+    <color name="colorUpsPrimary">#ffe600</color>
+    <color name="colorUpsPrimaryDark">#d7c83b</color>
+    <color name="colorUpsPrimaryLight">#e1ddba</color>
+    <color name="colorUpsAccent">#22c4ff</color>
+    <color name="colorUpsPrimary_text">#212121</color>
+    <color name="colorUpsSecondary_text">#757575</color>
+    <color name="colorUpsIcons">#FFFFFF</color>
+    <color name="colorUpsDivider">#BDBDBD</color>
+    <color name="colorUpsBackground">#fcfdff</color>
+    <color name="colorUpsForeground">#030303</color>
+
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
 </resources>

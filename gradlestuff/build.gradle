@@ -1,3 +1,5 @@
+
+
 apply plugin: 'com.android.application'
 
 android {
@@ -7,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.gradlestuff"
-        minSdkVersion 23
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -23,23 +25,52 @@ android {
         }
     }
 
-    flavorDimensions "app", "server"
-    productFlavors{
-       /* freeFlavour{}
-        paidFlavour{}*/
-        cartoon {
+    // APK signing configuration
+    android.signingConfigs {
+        MobileApp {
+            storeFile file("${rootDir}/gradlestuffapp_keystore.jks")
+            storePassword "gradlestuff#2018"
+            keyAlias "gradlestuff"
+            keyPassword "gradlestuff#2018"
+        }
+    }
+
+    flavorDimensions "app"//,"server"
+    productFlavors {
+        /* freeFlavour{}
+         paidFlavour{}*/
+        homedepot {
             dimension "app"
             //applicationId 'com.cc.whitelabel.cartoon'
+            //packageName "com.gradlestuff.cartoon"
+            applicationId "com.gradlestuff.homedepot"
+            versionName '1.0'
+            minSdkVersion 21
+            targetSdkVersion 26
         }
-        disney {
+        ups {
             dimension "app"
-            //applicationId 'com.cc.whitelabel.disney'
+            applicationId "com.gradlestuff.ups"
+            versionName "1.0"
+            minSdkVersion 21
+            targetSdkVersion 26
+            //packageName "com.gradlestuff.disney"
         }
-        pogo {
+        cyrano {
             dimension "app"
-            //applicationId 'com.cc.whitelabel.pogo'
+            applicationId "com.gradlestuff.cyrano"
+            versionName "1.0"
+            minSdkVersion 21
+            targetSdkVersion 26
+            //packageName "com.gradlestuff.disney"
         }
-        dev {
+        /*pogo {
+            dimension "app"
+            applicationId "com.gradlestuff.pogo"
+            versionName "1.0-phone"
+            //packageName "com.gradlestuff.pogo"
+        }*/
+        /*dev {
             dimension "server"
         }
         staging {
@@ -47,16 +78,28 @@ android {
         }
         production {
             dimension "server"
+        }*/
+    }
+    //flavorDimensions "app"
+    android.buildTypes {
+        debug {
+            //dimension "app"
+        }
+        stagging {
+            //dimension "app"
+        }
+        release {
+            //dimension "app"
         }
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
 }
