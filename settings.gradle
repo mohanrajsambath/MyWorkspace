@@ -1,1 +1,1 @@
-include ':gradlestuff', ':mythemeapp', ':firebasedb', ':firebaselistview', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule'
+include ':gradlestuff', ':mythemeapp', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule'
