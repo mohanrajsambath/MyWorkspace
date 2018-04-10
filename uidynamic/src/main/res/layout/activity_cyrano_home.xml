@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        android:id="@+id/inbox_container"
+        layout="@layout/app_bar_inbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/navigation_bg_color"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical|start"
+        android:maxLines="1"
+        android:overScrollMode="always"
+        android:textSize="16sp"
+        android:theme="@style/NavigationView"
+        app:headerLayout="@layout/nav_header_home"
+        app:itemIconTint="@color/nav_selector"
+        app:itemTextColor="@color/nav_selector">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/fab_background"
+                android:padding="1dp"
+                app:layout_marginBottomPercent="2%">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_createClip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/ic_video_recorder"
+                    android:theme="@style/AppTheme"
+                    app:backgroundTint="@color/fab_background"
+                    app:borderWidth="1dp"
+                    app:elevation="4dp"
+                    app:layout_collapseMode="parallax"
+                    android:focusable="true" />
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

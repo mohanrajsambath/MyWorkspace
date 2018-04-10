@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/id_settings_bg_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image_content_desc"
+                android:src="@drawable/side_nav_bar"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_header_background"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7.5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center|start|bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rL_inc_userprofile_image"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:padding="1dip">
+
+
+                <!--<com.ibot.cyranoapp.customview.CircleImageView
+                    android:id="@+id/user_rounded_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:focusable="true" />-->
+
+                <ImageView
+                    android:id="@+id/imgVw_profile_edit_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/button_edit_prof_bg"
+                    android:padding="1.5dp"
+                    android:src="@drawable/camera_icon"
+                    android:visibility="visible"
+                    android:contentDescription="@string/image_content_desc" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_nav_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/settings_text_color"
+                    android:textSize="21sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/id_nav_account_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:maxEms="38"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/settings_text_color"
+                        android:textSize="27sp" />
+
+                    <ImageView
+                        android:id="@+id/nav_switch_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/id_nav_account_info"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:clickable="true"
+                        android:contentDescription="@string/image_content_desc"
+                        android:onClick="switchAccount"
+                        android:rotation="180"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_switch_profile_translucent"
+                        android:tint="@color/settings_text_color"
+                        android:visibility="visible"
+                        android:focusable="true" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

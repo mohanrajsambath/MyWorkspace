@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/material_gray_200"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            tools:context=".controller.home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/view_spacing_small">
+
+        <include layout="@layout/fragment_material_theme_in_xml_buttons_raised"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_buttons_no_raise"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_buttons_borderless"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_selectable_items_rect"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_selectable_items_rounded_rect"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_text_fields"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_radio_buttons"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_checkboxes"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_switches"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_spinners"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_sliders"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_progress_indicators"/>
+
+        <include layout="@layout/fragment_material_theme_in_xml_icons"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <include
+                layout="@layout/activity_home_fab"/>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

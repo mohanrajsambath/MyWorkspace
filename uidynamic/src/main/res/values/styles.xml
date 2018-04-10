@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base Theme -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Attributes for all APIs -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="colorControlHighlight">@color/selector_black_pressed</item>
+    </style>
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- API specific attributes 14+ -->
+        <item name="selectableRectDrawable">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRectDrawableInverse">@drawable/state_list_selectable_rect_white</item>
+        <item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRoundedRectDrawable">@drawable/state_list_selectable_rounded_rect_black</item>
+        <item name="selectableRoundedRectDrawableInverse">@drawable/state_list_selectable_rounded_rect_white</item>
+        <item name="selectableRoundedRectDrawableColored">@drawable/state_list_selectable_rounded_rect_black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!--HomedepotTheme Customization-->
+    <style name="HomedepotAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorHomedepotPrimary</item>
+        <item name="colorPrimaryDark">@color/colorHomedepotPrimaryDark</item>
+        <item name="colorAccent">@color/colorHomedepotAccent</item>
+    </style>
+
+    <!--UpsTheme Customization-->
+    <style name="UpsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorUpsPrimary</item>
+        <item name="colorPrimaryDark">@color/colorUpsPrimaryDark</item>
+        <item name="colorAccent">@color/colorUpsAccent</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog"/>
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ToolbarColored" parent="MyMaterialTheme">
+        <item name="android:textColorSecondary">@color/toolbar_text_color</item>
+        <item name="android:headerBackground">@color/toolbar_background</item>
+    </style>
+
+    <!--<style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/toolbar_background</item>
+    </style>-->
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <item name="android:headerBackground">@color/toolbar_background</item>
+        <!--<item name="android:datePickerStyle">@style/MyDatePickerStyle</item>-->
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.DesignDemos.BottomSheetModal.BottomSheetDialog</item>
+    </style>
+
+    <style name="Theme.DesignDemos.BottomSheetModal.BottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">350dp</item>
+    </style>
+    <style name="NavigationView">
+        <item name="android:listDivider">@color/navigation_divider</item>
+    </style>
+
+    <style name="profileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+   <!-- <style name="HDprofileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">@color/colorHDPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorHDAccent</item>
+        <item name="android:textColorSecondary">@color/colorHDAccent</item>
+
+        <item name="colorAccent">@color/colorHDAccent</item>
+
+    </style>-->
+
+</resources>

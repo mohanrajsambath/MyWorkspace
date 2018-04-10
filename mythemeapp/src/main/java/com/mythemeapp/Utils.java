@@ -1,7 +1,7 @@
 package com.mythemeapp;
 
  /*
- * Copyright (c) 2018. Created by Mohanraj.S,Innobot Systems on 20/3/18 for MyWorkspace
+ * Copyright (c) 2018. Created by Mohanraj.S, on 20/3/18 for MyWorkspace
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -22,8 +22,8 @@ public class Utils {
     private static int sTheme;
 
     public final static int THEME_DEFAULT = 0;
-    public final static int THEME_CARTOON = 1;
-    public final static int THEME_DISNEY = 2;
+    public final static int THEME_HD = 1;
+    public final static int THEME_UPS = 2;
 
     /**
      * Set the theme of the Activity, and restart it by creating a new Activity of the same type.
@@ -44,11 +44,11 @@ public class Utils {
             case THEME_DEFAULT:
                 activity.setTheme(R.style.AppTheme);
                 break;
-            case THEME_CARTOON:
-                activity.setTheme(R.style.CartoonAppTheme);
+            case THEME_HD:
+                activity.setTheme(R.style.BaseTheme_Orange);
                 break;
-            case THEME_DISNEY:
-                activity.setTheme(R.style.DisneyAppTheme);
+            case THEME_UPS:
+                activity.setTheme(R.style.BaseTheme_Lime);
                 break;
         }
     }
