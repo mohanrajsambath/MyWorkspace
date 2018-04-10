@@ -37,12 +37,10 @@ android {
 
     flavorDimensions "app"//,"server"
     productFlavors {
-        /* freeFlavour{}
-         paidFlavour{}*/
+
         homedepot {
             dimension "app"
-            //applicationId 'com.cc.whitelabel.cartoon'
-            //packageName "com.gradlestuff.cartoon"
+
             applicationId "com.gradlestuff.homedepot"
             versionName '1.0'
             minSdkVersion 21
@@ -54,7 +52,7 @@ android {
             versionName "1.0"
             minSdkVersion 21
             targetSdkVersion 26
-            //packageName "com.gradlestuff.disney"
+
         }
         cyrano {
             dimension "app"
@@ -62,7 +60,7 @@ android {
             versionName "1.0"
             minSdkVersion 21
             targetSdkVersion 26
-            //packageName "com.gradlestuff.disney"
+
         }
           }
     //flavorDimensions "app"
