@@ -1,25 +1,64 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Base Theme -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Attributes for all APIs -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="colorControlHighlight">@color/selector_black_pressed</item>
+    </style>
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme" parent="BaseTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowNoTitle">true</item>
+        <!-- API specific attributes 14+ -->
+        <item name="selectableRectDrawable">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRectDrawableInverse">@drawable/state_list_selectable_rect_white</item>
+        <item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRoundedRectDrawable">@drawable/state_list_selectable_rounded_rect_black</item>
+        <item name="selectableRoundedRectDrawableInverse">@drawable/state_list_selectable_rounded_rect_white</item>
+        <item name="selectableRoundedRectDrawableColored">@drawable/state_list_selectable_rounded_rect_black</item>
         <item name="windowActionBar">false</item>
-    </style>
-
-    <style name="HDAppTheme" parent="AppTheme">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorHDPrimary</item>
-        <item name="colorPrimaryDark">@color/colorHDPrimaryDark</item>
-        <item name="colorAccent">@color/colorHDAccent</item>
         <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
     </style>
-
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!--HomedepotTheme Customization-->
+    <style name="HomedepotAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorHomedepotPrimary</item>
+        <item name="colorPrimaryDark">@color/colorHomedepotPrimaryDark</item>
+        <item name="colorAccent">@color/colorHomedepotAccent</item>
+    </style>
+
+    <!--UpsTheme Customization-->
+    <style name="UpsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorUpsPrimary</item>
+        <item name="colorPrimaryDark">@color/colorUpsPrimaryDark</item>
+        <item name="colorAccent">@color/colorUpsAccent</item>
+    </style>
+
+
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog"/>
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert"/>
+
 
     <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">18sp</item>
@@ -70,7 +109,7 @@
 
     </style>
 
-    <style name="HDprofileTheme" parent="Theme.AppCompat.Light.NoActionBar">
+   <!-- <style name="HDprofileTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -80,6 +119,6 @@
 
         <item name="colorAccent">@color/colorHDAccent</item>
 
-    </style>
+    </style>-->
 
 </resources>

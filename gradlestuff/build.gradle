@@ -64,22 +64,7 @@ android {
             targetSdkVersion 26
             //packageName "com.gradlestuff.disney"
         }
-        /*pogo {
-            dimension "app"
-            applicationId "com.gradlestuff.pogo"
-            versionName "1.0-phone"
-            //packageName "com.gradlestuff.pogo"
-        }*/
-        /*dev {
-            dimension "server"
-        }
-        staging {
-            dimension "server"
-        }
-        production {
-            dimension "server"
-        }*/
-    }
+          }
     //flavorDimensions "app"
     android.buildTypes {
         debug {

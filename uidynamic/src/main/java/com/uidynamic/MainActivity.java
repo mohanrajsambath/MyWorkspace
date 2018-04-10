@@ -1,5 +1,7 @@
 package com.uidynamic;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -30,12 +32,45 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     ImageView id_settings_bg_image;
     private TextView navAccountInfo;
     private TextView navUserName;
+    String mLoginvalue ="",mTheme="";
+
+    SharedPreferences sharedpreferences=null;
+    SharedPreferences.Editor editor=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Utils.onActivityCreateSetTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cyrano_home);
+        inittheme();
         initViews();
+    }
+
+    private void inittheme() {
+        sharedpreferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        if (sharedpreferences.contains("LOGIN")) {
+            mLoginvalue=sharedpreferences.getString("LOGIN", "");
+        }
+        if (sharedpreferences.contains("SETTHEME")) {
+            mTheme=sharedpreferences.getString("SETTHEME", "");
+        }
+
+        if(mTheme.length()>0 && mTheme.equals("false")){
+            if(mLoginvalue.length()>0) {
+
+                if (mLoginvalue.equalsIgnoreCase("admin@hd.com")) {
+                    Utils.changeToTheme(this, Utils.THEME_HDNEWS);
+                    //editor.clear();
+                } else if (mLoginvalue.equalsIgnoreCase("admin@ups.com")) {
+                    Utils.changeToTheme(this, Utils.THEME_UPS);
+                } else {
+                    Utils.changeToTheme(this, Utils.THEME_DEFAULT);
+                }
+                editor = sharedpreferences.edit();
+                editor.putString("SETTHEME", "true"); // Storing string
+                editor.apply();
+            }
+        }
     }
 
     private void initViews() {
@@ -46,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         toolbarTitle.setText("Inbox");
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
         navigationView.setNavigationItemSelectedListener(this);
         mMenuItem = navigationView.getMenu();
         header = navigationView.getHeaderView(0);

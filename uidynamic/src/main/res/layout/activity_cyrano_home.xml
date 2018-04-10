@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:clickable="true"
                     android:src="@drawable/ic_video_recorder"
-                    android:theme="@style/HDprofileTheme"
+                    android:theme="@style/AppTheme"
                     app:backgroundTint="@color/fab_background"
                     app:borderWidth="1dp"
                     app:elevation="4dp"
