@@ -27,4 +27,8 @@
     <string name="nav_security">My Security</string>
     <string name="nav_signout">Logout</string>
     <string name="nav_about_cyrano">About Cyrano</string>
+
+    <string name="e_mail">E-Mail</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
 </resources>
