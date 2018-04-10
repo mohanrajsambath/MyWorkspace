@@ -1,0 +1,190 @@
+<resources>
+
+    <!-- Base Theme -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Attributes for all APIs -->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dialogTheme">@style/AppTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="colorControlHighlight">@color/selector_black_pressed</item>
+    </style>
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/colorHomedepotPrimary</item>
+        <item name="colorPrimaryDark">@color/colorHomedepotPrimaryDark</item>
+        <item name="colorAccent">@color/colorHomedepotAccent</item>
+        <!-- API specific attributes 14+ -->
+        <item name="selectableRectDrawable">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRectDrawableInverse">@drawable/state_list_selectable_rect_white</item>
+        <item name="selectableRectDrawableColored">@drawable/state_list_selectable_rect_black</item>
+        <item name="selectableRoundedRectDrawable">@drawable/state_list_selectable_rounded_rect_black</item>
+        <item name="selectableRoundedRectDrawableInverse">@drawable/state_list_selectable_rounded_rect_white</item>
+        <item name="selectableRoundedRectDrawableColored">@drawable/state_list_selectable_rounded_rect_black</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!-- Default App Theme -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <!-- Light App Bar Theme -->
+    <style name="AppTheme.AppBar.Light" parent="ThemeOverlay.AppCompat.ActionBar">
+    </style>
+
+    <!-- Dark App Bar Theme -->
+    <style name="AppTheme.AppBar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+
+    <!-- Light Overlay Theme -->
+    <style name="AppTheme.Overlay.Light" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <!-- Dark Overlay Theme -->
+    <style name="AppTheme.Overlay.Dark" parent="ThemeOverlay.AppCompat.Dark">
+    </style>
+
+
+    <!-- Button Styles -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+    </style>
+
+    <style name="ButtonStyle.NoRaise">
+        <!-- Pre API 21 has no raise effect by default -->
+    </style>
+
+    <style name="ButtonStyle.Colored" parent="Widget.AppCompat.Button.Colored">
+    </style>
+
+    <style name="ButtonStyle.Colored.NoRaise">
+        <!-- Pre API 21 has no raise effect by default -->
+    </style>
+
+    <style name="ButtonStyle.Borderless" parent="Widget.AppCompat.Button.Borderless">
+    </style>
+
+    <style name="ButtonStyle.Borderless.ColoredText" parent="Widget.AppCompat.Button.Borderless.Colored">
+    </style>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+    </style>
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    </style>
+
+    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+    </style>
+
+    <!-- Selectable Item Styles -->
+    <style name="SelectableItemStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SelectableItemStyle.Rect">
+        <item name="android:background">?selectableRectDrawable</item>
+    </style>
+
+    <style name="SelectableItemStyle.Rect.Colored">
+        <item name="android:background">?selectableRectDrawableColored</item>
+    </style>
+
+    <style name="SelectableItemStyle.Rect.Inverse">
+        <item name="android:background">?selectableRectDrawableInverse</item>
+    </style>
+
+    <style name="SelectableItemStyle.RoundedRect">
+        <item name="android:background">?selectableRoundedRectDrawable</item>
+    </style>
+
+    <style name="SelectableItemStyle.RoundedRect.Colored">
+        <item name="android:background">?selectableRoundedRectDrawableColored</item>
+    </style>
+
+    <style name="SelectableItemStyle.RoundedRect.Inverse">
+        <item name="android:background">?selectableRoundedRectDrawableInverse</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+    </style>
+
+    <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title">
+    </style>
+
+    <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1">
+    </style>
+
+    <style name="TextStyle.Body2" parent="TextAppearance.AppCompat.Body2">
+    </style>
+
+    <!-- Edit Text Styles -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout">
+    </style>
+
+    <!-- Spinner Styles -->
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+    </style>
+
+    <style name="SpinnerStyle.Underlined" parent="Widget.AppCompat.Spinner.Underlined">
+    </style>
+
+    <!-- Progress Bar Styles -->
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar">
+    </style>
+
+    <style name="ProgressBarStyle.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal">
+    </style>
+
+    <!-- Slider Styles -->
+    <style name="SeekbarStyle" parent="Widget.AppCompat.SeekBar">
+    </style>
+
+    <!-- Image Styles -->
+    <style name="ImageStyle">
+    </style>
+
+    <style name="ImageStyle.Colored">
+        <item name="android:tint">?colorAccent</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="CardStyle" parent="CardView.Light">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="CardStyle.Home">
+        <item name="contentPaddingBottom">@dimen/content_spacing_vertical</item>
+        <item name="contentPaddingLeft">@dimen/content_spacing_horizontal</item>
+        <item name="contentPaddingRight">@dimen/content_spacing_horizontal</item>
+        <item name="contentPaddingTop">@dimen/content_spacing_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/view_spacing_small</item>
+        <item name="android:layout_marginLeft">@dimen/screen_spacing_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/screen_spacing_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/view_spacing_small</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+
+
+</resources>
