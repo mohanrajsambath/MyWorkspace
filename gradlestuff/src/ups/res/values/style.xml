@@ -3,8 +3,8 @@
     <!-- Base Theme -->
     <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Attributes for all APIs -->
-        <item name="windowActionBar">true</item>
-        <item name="windowNoTitle">true</item>
+        <!--<item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>-->
         <item name="dialogTheme">@style/AppTheme.Dialog</item>
         <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
         <item name="colorControlHighlight">@color/selector_black_pressed</item>
@@ -24,18 +24,18 @@
         <item name="selectableRoundedRectDrawable">@drawable/state_list_selectable_rounded_rect_black</item>
         <item name="selectableRoundedRectDrawableInverse">@drawable/state_list_selectable_rounded_rect_white</item>
         <item name="selectableRoundedRectDrawableColored">@drawable/state_list_selectable_rounded_rect_black</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <!--<item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>-->
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <!-- Default App Theme -->
-    <style name="AppTheme.NoActionBar">
+    <!--<style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
 
-    </style>
+    </style>-->
 
     <!-- Light App Bar Theme -->
     <style name="AppTheme.AppBar.Light" parent="ThemeOverlay.AppCompat.ActionBar">
