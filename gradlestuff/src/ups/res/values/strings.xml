@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">UPS</string>
+    <string name="app_desc">
+        United Parcel Service (UPS) is an American multinational package delivery company and a provider of supply chain management solutions.The global logistics company is headquartered in the U.S. city of Sandy Springs, Georgia, which is a part of the Greater Atlanta metropolitan area.
+Along with the central package delivery operation, the UPS brand name (in a fashion to that of competitor FedEx) is used to denote many of its divisions and subsidiaries, including its cargo airline (UPS Airlines), freight-based trucking operation (UPS Freight, formerly Overnite Transportation), and retail-based packing and shipping centers (The UPS Store).
+    </string>
+
+    <string name="action_logout">Logout</string>
 </resources>

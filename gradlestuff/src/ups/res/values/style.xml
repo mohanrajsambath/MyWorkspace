@@ -120,9 +120,12 @@
 
     <!-- Text Styles -->
     <style name="TextStyle" parent="TextAppearance.AppCompat">
+       <!-- <item name="textColor">@color/colorUpsPrimary</item>
+        <item name="textSize">22sp</item>-->
     </style>
 
     <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title">
+
     </style>
 
     <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1">

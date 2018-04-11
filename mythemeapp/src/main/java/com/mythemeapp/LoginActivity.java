@@ -48,11 +48,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.button_login:
-
+                //gotoActivity();
                 String mInputEmail=edTxt_email.getText().toString().trim();
-
                 if(isEmailValid(mInputEmail)) {
-
                     if (mInputEmail.length() > 0) {
                     SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
                     SharedPreferences.Editor editor = pref.edit();
@@ -66,6 +64,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 }
 
                 break;
+
+
         }
 
     }

@@ -1,9 +1,10 @@
-package com.uidynamic;
+package com.gradlestuff;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -36,7 +37,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private EditText edTxt_email,edTxt_password;
     private Button button_login;
-
+    TextWatcher watch;
+    private ImageView imgVw_login_logo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,15 +46,70 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         edTxt_email=(EditText)findViewById(R.id.edTxt_email);
         edTxt_password=(EditText)findViewById(R.id.edTxt_password);
+        imgVw_login_logo= (ImageView)findViewById(R.id.imgVw_login_logo);
         button_login=(Button)findViewById(R.id.button_login);
-
         button_login.setOnClickListener(this);
 
+        inittextWatch();
+        edTxt_email.addTextChangedListener(watch);
     }
 
+    private void inittextWatch() {
+
+        watch = new TextWatcher(){
+
+            @Override
+            public void afterTextChanged(Editable edt) {
+                // TODO Auto-generated method stub
+                String matchWords = edTxt_email.getText().toString().toLowerCase().trim();
+                if(edt.length()>0) {
+                    if (matchWords.contains("hd") || matchWords.contains("hdnews") || matchWords.contains("homedepot")) {
+                        imgVw_login_logo.setImageResource(R.drawable.logo_hd);
+                    } else if (matchWords.contains("ups") || matchWords.contains("united parcel service")
+                            || matchWords.contains("unitedparcel service")
+                            || matchWords.contains("united parcelservice")
+                            || matchWords.contains("unitedparcelservice")) {
+                        imgVw_login_logo.setImageResource(R.drawable.logo_ups);
+                    } else if (matchWords.contains("cyrano") || matchWords.contains("cyranosystems") || matchWords.contains("cyranoapp")) {
+                        imgVw_login_logo.setImageResource(R.drawable.logo_cyrano);
+                    } else {
+                        imgVw_login_logo.setImageResource(R.mipmap.ic_account_circle_black_48dp);
+                    }
+                }else{
+
+                }
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
+                                          int arg3) {
 
 
+            }
 
+            @Override
+            public void onTextChanged(CharSequence s, int a, int b, int c) {
+                // TODO Auto-generated method stub
+
+                //output.setText(s);
+                /*if(a == 9){
+                    Toast.makeText(getApplicationContext(), "Maximum Limit Reached", Toast.LENGTH_SHORT).show();
+                }*/
+                /*String matchWords = s.toString().toLowerCase();
+                if(matchWords.equals("hd")||matchWords.equals("hdnews")||matchWords.equals("homedepot")){
+                    imgVw_login_logo.setImageResource(R.drawable.logo_hd);
+                }else if(matchWords.equals("ups")||matchWords.equals("united parcel service")
+                        ||matchWords.equals("unitedparcel service")
+                        ||matchWords.equals("united parcelservice")
+                        ||matchWords.equals("unitedparcelservice")){
+                    imgVw_login_logo.setImageResource(R.drawable.logo_ups);
+                }else if(matchWords.equals("cyrano")||matchWords.equals("cyranosystems")||matchWords.equals("cyranoapp")){
+                    imgVw_login_logo.setImageResource(R.drawable.logo_cyrano);
+                }else{
+                    imgVw_login_logo.setImageResource(R.mipmap.ic_account_circle_black_48dp);
+                }*/
+            }};
+    }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
