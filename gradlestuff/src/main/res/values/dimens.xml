@@ -25,5 +25,9 @@
 
     <!-- Selectable Items -->
     <dimen name="selectable_rounded_rect_corner_radius">3dp</dimen>
+    <dimen name="row_padding_vertical">10dp</dimen>
+    <dimen name="inter_card_half_spacing">4dp</dimen>
+    <dimen name="card_padding">8dp</dimen>
+
 
 </resources>

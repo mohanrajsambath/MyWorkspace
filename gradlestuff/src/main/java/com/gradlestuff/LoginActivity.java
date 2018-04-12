@@ -18,7 +18,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
- /*
+/*
  * Copyright (c) 2018. Created by Mohanraj.S, on 20/3/18 for MyWorkspace
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,55 +60,30 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             @Override
             public void afterTextChanged(Editable edt) {
-                // TODO Auto-generated method stub
                 String matchWords = edTxt_email.getText().toString().toLowerCase().trim();
                 if(edt.length()>0) {
                     if (matchWords.contains("hd") || matchWords.contains("hdnews") || matchWords.contains("homedepot")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_hd);
-                    } else if (matchWords.contains("ups") || matchWords.contains("united parcel service")
+                    }/* else if (matchWords.contains("ups") || matchWords.contains("united parcel service")
                             || matchWords.contains("unitedparcel service")
                             || matchWords.contains("united parcelservice")
                             || matchWords.contains("unitedparcelservice")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_ups);
-                    } else if (matchWords.contains("cyrano") || matchWords.contains("cyranosystems") || matchWords.contains("cyranoapp")) {
+                    } else if (matchWords.contains("cyrano")
+                            || matchWords.contains("cyranosystems")
+                            || matchWords.contains("cyranoapp")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_cyrano);
-                    } else {
+                    } */else {
                         imgVw_login_logo.setImageResource(R.mipmap.ic_account_circle_black_48dp);
                     }
-                }else{
-
                 }
             }
 
             @Override
-            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
-                                          int arg3) {
-
-
-            }
+            public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,int arg3) {}
 
             @Override
-            public void onTextChanged(CharSequence s, int a, int b, int c) {
-                // TODO Auto-generated method stub
-
-                //output.setText(s);
-                /*if(a == 9){
-                    Toast.makeText(getApplicationContext(), "Maximum Limit Reached", Toast.LENGTH_SHORT).show();
-                }*/
-                /*String matchWords = s.toString().toLowerCase();
-                if(matchWords.equals("hd")||matchWords.equals("hdnews")||matchWords.equals("homedepot")){
-                    imgVw_login_logo.setImageResource(R.drawable.logo_hd);
-                }else if(matchWords.equals("ups")||matchWords.equals("united parcel service")
-                        ||matchWords.equals("unitedparcel service")
-                        ||matchWords.equals("united parcelservice")
-                        ||matchWords.equals("unitedparcelservice")){
-                    imgVw_login_logo.setImageResource(R.drawable.logo_ups);
-                }else if(matchWords.equals("cyrano")||matchWords.equals("cyranosystems")||matchWords.equals("cyranoapp")){
-                    imgVw_login_logo.setImageResource(R.drawable.logo_cyrano);
-                }else{
-                    imgVw_login_logo.setImageResource(R.mipmap.ic_account_circle_black_48dp);
-                }*/
-            }};
+            public void onTextChanged(CharSequence s, int a, int b, int c) { }};
     }
     @Override
     public void onClick(View v) {
@@ -120,11 +95,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 if(isEmailValid(mInputEmail)) {
 
                     if (mInputEmail.length() > 0) {
-                    SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+                    /*SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
                     SharedPreferences.Editor editor = pref.edit();
                     editor.putString("LOGIN", mInputEmail); // Storing string
                     editor.putString("SETTHEME", "false"); // Storing string
-                    editor.apply();
+                    editor.apply();*/
                     gotoActivity();
                 }
                 }else{

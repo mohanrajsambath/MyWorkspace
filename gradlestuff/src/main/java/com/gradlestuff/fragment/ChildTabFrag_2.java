@@ -23,9 +23,9 @@ import com.gradlestuff.R;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class Fragment2 extends Fragment {
+public class ChildTabFrag_2 extends Fragment {
 
-    public Fragment2() {
+    public ChildTabFrag_2() {
         // Required empty public constructor
     }
 

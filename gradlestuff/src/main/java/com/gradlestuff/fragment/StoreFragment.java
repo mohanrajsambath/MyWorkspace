@@ -32,8 +32,8 @@ public class StoreFragment extends Fragment {
 
     private void setupViewPager(ViewPager viewPager) {
         adapter = new Adapter(getChildFragmentManager());
-        adapter.addFragment(new Fragment1(), "Logo");
-        adapter.addFragment(new Fragment2(), "About");
+        adapter.addFragment(new ChildTabFrag_1(), "Logo");
+        adapter.addFragment(new ChildTabFrag_2(), "About");
         viewPager.setAdapter(adapter);
     }
 
