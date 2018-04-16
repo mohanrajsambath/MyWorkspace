@@ -37,8 +37,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Utils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_main);
         //initTheme();
+        initUserValue();
         initiViews();
 
+    }
+
+    private void initUserValue() {
+        sharedpreferences = getSharedPreferences("MyPref", Context.MODE_PRIVATE);
+        if (sharedpreferences.contains("LOGIN")) {
+            mLoginvalue=sharedpreferences.getString("LOGIN", "");
+        }
     }
 
     private void initTheme() {
@@ -82,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
+        drawer.openDrawer(GravityCompat.START);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
@@ -96,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //drawerImage.setBackgroundResource(R.drawable.side_nav_bar);
         drawerImage.setImageResource(R.mipmap.ic_launcher_round);
         drawerUsername.setText("User");
-        drawerAccount.setText("user@gmail.com");
+        drawerAccount.setText(mLoginvalue);
         navigationView.setNavigationItemSelectedListener(this);
     }
 

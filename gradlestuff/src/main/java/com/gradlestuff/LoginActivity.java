@@ -62,14 +62,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             public void afterTextChanged(Editable edt) {
                 String matchWords = edTxt_email.getText().toString().toLowerCase().trim();
                 if(edt.length()>0) {
-                    if (matchWords.contains("hd") || matchWords.contains("hdnews") || matchWords.contains("homedepot")) {
+                    /*if (matchWords.contains("hd") || matchWords.contains("hdnews") || matchWords.contains("homedepot")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_hd);
-                    }/* else if (matchWords.contains("ups") || matchWords.contains("united parcel service")
+                    } else*/
+                    if (matchWords.contains("ups") || matchWords.contains("united parcel service")
                             || matchWords.contains("unitedparcel service")
                             || matchWords.contains("united parcelservice")
                             || matchWords.contains("unitedparcelservice")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_ups);
-                    } else if (matchWords.contains("cyrano")
+                    } /*else if (matchWords.contains("cyrano")
                             || matchWords.contains("cyranosystems")
                             || matchWords.contains("cyranoapp")) {
                         imgVw_login_logo.setImageResource(R.drawable.logo_cyrano);
@@ -91,18 +92,22 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.button_login:
 
                 String mInputEmail=edTxt_email.getText().toString().trim();
+                String mInputPassword=edTxt_password.getText().toString().trim();
 
                 if(isEmailValid(mInputEmail)) {
+                    if(mInputPassword.contentEquals("Test@2345")) {
 
-                    if (mInputEmail.length() > 0) {
-                    /*SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
-                    SharedPreferences.Editor editor = pref.edit();
-                    editor.putString("LOGIN", mInputEmail); // Storing string
-                    editor.putString("SETTHEME", "false"); // Storing string
-                    editor.apply();*/
-                    gotoActivity();
-                }
-                }else{
+                        if (mInputEmail.length() > 0) {
+                            SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
+                            SharedPreferences.Editor editor = pref.edit();
+                            editor.putString("LOGIN", mInputEmail); // Storing string
+                            //editor.putString("SETTHEME", "false"); // Storing string
+                            editor.apply();
+                            gotoActivity();
+                        }
+                    }else{
+                        Toast.makeText(LoginActivity.this,"Please Enter Valid Password",Toast.LENGTH_SHORT).show();
+                    }}else{
                     Toast.makeText(LoginActivity.this,"Please Enter Valid EMail",Toast.LENGTH_SHORT).show();
                 }
 
@@ -137,4 +142,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         else
             return false;
     }
+
+
 }
