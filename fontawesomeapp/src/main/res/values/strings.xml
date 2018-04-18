@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FontAwesomeApp</string>
+    <string name="video">Video</string>
+    <string name="audio">Audio</string>
+    <string name="library">Library</string>
+    <string name="link">Link</string>
+    <string name="record_duration">Video 00:00:00</string>
+</resources>
