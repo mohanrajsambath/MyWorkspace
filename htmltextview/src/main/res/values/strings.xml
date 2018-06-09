@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HtmlTextView</string>
+    <string name="source">Source available at https://bitbucket.org/Kuitsi/android-textview-html-list</string>
+</resources>

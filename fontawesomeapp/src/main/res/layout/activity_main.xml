@@ -1,6 +1,4 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/icons_container"
     android:layout_width="match_parent"
@@ -14,7 +12,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"-->
 
     <LinearLayout
-        android:id="@+id/icons_container_filetype"
+        android:id="@+id/filetype_container"
         android:layout_width="match_parent"
         android:layout_alignParentBottom="true"
         android:paddingStart="35dp"
@@ -26,7 +24,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
-            <TextView
+            <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/txTw_Video"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -35,6 +33,8 @@
                 android:textColor="#ffffff"
                 android:textAllCaps="true"
                 android:textSize="12sp"
+                android:background="@drawable/round_rect_shape"
+                android:duplicateParentState="true"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
         <RelativeLayout
@@ -87,7 +87,7 @@
     <LinearLayout
         android:id="@+id/icons_container_camera"
         android:layout_width="match_parent"
-        android:layout_above="@+id/icons_container_filetype"
+        android:layout_above="@+id/filetype_container"
         android:layout_height="65dp"
         android:orientation="horizontal"
         android:background="#80000000">

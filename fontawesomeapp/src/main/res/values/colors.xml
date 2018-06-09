@@ -7,5 +7,7 @@
     <color name="colorGreenPrimary">#029c45</color>
     <color name="colorGreenPrimaryDark">#01612b</color>
     <color name="colorGreenAccent">#00ff6f</color>
+    <color name="theme_accent_color">#FF339999</color>
+    <color name="theme_accent_color_light">#44339999</color>
 
 </resources>

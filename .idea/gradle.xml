@@ -9,9 +9,17 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/MaterialThemeDemo" />
+            <option value="$PROJECT_DIR$/appmohan" />
+            <option value="$PROJECT_DIR$/bottomsheet" />
+            <option value="$PROJECT_DIR$/camera2" />
+            <option value="$PROJECT_DIR$/cameratwoapi" />
             <option value="$PROJECT_DIR$/fontawesomeapp" />
             <option value="$PROJECT_DIR$/gradlestuff" />
+            <option value="$PROJECT_DIR$/htmltextview" />
             <option value="$PROJECT_DIR$/mythemeapp" />
+            <option value="$PROJECT_DIR$/recyclerviewradiobutton" />
+            <option value="$PROJECT_DIR$/rippleeffecttextview" />
+            <option value="$PROJECT_DIR$/svgdesignui" />
             <option value="$PROJECT_DIR$/testmodule" />
             <option value="$PROJECT_DIR$/uidynamic" />
             <option value="$PROJECT_DIR$/uidynamicref" />

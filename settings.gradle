@@ -1,1 +1,1 @@
-include ':gradlestuff', ':mythemeapp', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule', ':fontawesomeapp'
+include ':gradlestuff', ':mythemeapp', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule', ':fontawesomeapp', ':appmohan', ':rippleeffecttextview', ':bottomsheet', ':recyclerviewradiobutton', ':svgdesignui', ':camera2', ':cameratwoapi', ':htmltextview'

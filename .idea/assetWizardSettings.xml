@@ -13,7 +13,7 @@
                       <PersistentState>
                         <option name="values">
                           <map>
-                            <entry key="resourceDirectory" value="homedepot" />
+                            <entry key="resourceDirectory" value="pogo" />
                           </map>
                         </option>
                       </PersistentState>
@@ -46,7 +46,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/Images/HomeDEPOT/hd-logo.png" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Downloads/Images/CartoonNetwork/Chhota-Bheem-pogo.jpg" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -87,9 +87,12 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_dashboard_black_24dp" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="height" value="512" />
+                            <entry key="outputName" value="ic_meetup" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="$USER_HOME$" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/FontAwesome/meetup.svg" />
+                            <entry key="width" value="512" />
                           </map>
                         </option>
                       </PersistentState>

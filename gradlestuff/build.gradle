@@ -4,7 +4,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-
     defaultConfig {
         applicationId "com.gradlestuff"
         minSdkVersion 21
@@ -14,14 +13,12 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
-
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
     // APK signing configuration
     android.signingConfigs {
         MobileApp {
@@ -31,7 +28,6 @@ android {
             keyPassword "gradlestuff#2018"
         }
     }
-
     flavorDimensions "app"//,"server"
     productFlavors {
         homedepot {
@@ -59,7 +55,6 @@ android {
             targetSdkVersion 26
         }
     }
-
     //flavorDimensions "app"
     android.buildTypes {
         debug {
@@ -72,16 +67,16 @@ android {
             //dimension "app"
         }*/
     }
-
-    sourceSets.homedepot{
+    sourceSets.homedepot {
         res.srcDirs = ['res', 'src/homedepot/res']
     }
-    sourceSets.ups{
+    sourceSets.ups {
         res.srcDirs = ['res', 'src/ups/res']
     }
-    sourceSets.cyrano{
+    sourceSets.cyrano {
         res.srcDirs = ['res', 'src/cyrano/res']
     }
+    buildToolsVersion '27.0.3'
 }
 
 dependencies {

@@ -3,6 +3,7 @@ package com.fontawesomeapp.activity;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,10 +15,10 @@ import com.fontawesomeapp.utils.Light_FontManager;
 import com.fontawesomeapp.utils.Solid_FontManager;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    TextView txTw_circle_outside,txTw_circle_inside,txTw_flipCamera,txTw_scriptEdit,txtVw_close,txtVw_settings,txTw_Video,txTw_audio,txTw_library,txTw_link;
+    TextView txTw_circle_outside,txTw_circle_inside,txTw_flipCamera,txTw_scriptEdit,txtVw_close,txtVw_settings,txTw_audio,txTw_library,txTw_link;
     Typeface iconFont,brandIconFont,solidIconFont,lightIconFont;
     private RelativeLayout icons_container;
-
+private AppCompatTextView txTw_Video;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtVw_close =(TextView)findViewById(R.id.txtVw_close);
         txtVw_settings =(TextView)findViewById(R.id.txtVw_settings);
 
-        txTw_Video =(TextView)findViewById(R.id.txTw_Video);
+        txTw_Video =(AppCompatTextView)findViewById(R.id.txTw_Video);
         txTw_audio =(TextView)findViewById(R.id.txTw_audio);
         txTw_library =(TextView)findViewById(R.id.txTw_library);
         txTw_link =(TextView)findViewById(R.id.txTw_link);
