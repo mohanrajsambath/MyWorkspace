@@ -3,17 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" filepath="$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/MyWorkspace.iml" filepath="$PROJECT_DIR$/.idea/MyWorkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
       <module fileurl="file://$PROJECT_DIR$/appmohan/appmohan.iml" filepath="$PROJECT_DIR$/appmohan/appmohan.iml" />
       <module fileurl="file://$PROJECT_DIR$/bottomsheet/bottomsheet.iml" filepath="$PROJECT_DIR$/bottomsheet/bottomsheet.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera2/camera2.iml" filepath="$PROJECT_DIR$/camera2/camera2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/camerasurfaceview/camerasurfaceview.iml" filepath="$PROJECT_DIR$/camerasurfaceview/camerasurfaceview.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameratwoapi/cameratwoapi.iml" filepath="$PROJECT_DIR$/cameratwoapi/cameratwoapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discreetseekbar/discreetseekbar.iml" filepath="$PROJECT_DIR$/discreetseekbar/discreetseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamicfragment/dynamicfragment.iml" filepath="$PROJECT_DIR$/dynamicfragment/dynamicfragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emailcontactlist/emailcontactlist.iml" filepath="$PROJECT_DIR$/emailcontactlist/emailcontactlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" filepath="$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextview/htmltextview.iml" filepath="$PROJECT_DIR$/htmltextview/htmltextview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" filepath="$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/rippleeffecttextview/rippleeffecttextview.iml" filepath="$PROJECT_DIR$/rippleeffecttextview/rippleeffecttextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seekbardotted/seekbardotted.iml" filepath="$PROJECT_DIR$/seekbardotted/seekbardotted.iml" />
       <module fileurl="file://$PROJECT_DIR$/svgdesignui/svgdesignui.iml" filepath="$PROJECT_DIR$/svgdesignui/svgdesignui.iml" />
       <module fileurl="file://$PROJECT_DIR$/testmodule/testmodule.iml" filepath="$PROJECT_DIR$/testmodule/testmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/uidynamic/uidynamic.iml" filepath="$PROJECT_DIR$/uidynamic/uidynamic.iml" />

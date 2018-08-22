@@ -77,7 +77,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/home/innobot-linux-4/IBOT/Mohan/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_dashboard_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/home/innobot-linux-4/IBOT/Mohan/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/notification/ic_priority_high_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -88,10 +88,11 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
+                            <entry key="color" value="fc9102" />
                             <entry key="height" value="512" />
-                            <entry key="outputName" value="ic_meetup" />
+                            <entry key="outputName" value="ic_circle" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/FontAwesome/meetup.svg" />
+                            <entry key="sourceFile" value="$USER_HOME$/Downloads/FontAwesome/circle.svg" />
                             <entry key="width" value="512" />
                           </map>
                         </option>

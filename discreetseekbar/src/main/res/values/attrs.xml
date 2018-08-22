@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DottedSeekBar">
+        <attr name="dots_positions" format="reference"/>
+        <attr name="dots_drawable" format="reference"/>
+    </declare-styleable>
+</resources>

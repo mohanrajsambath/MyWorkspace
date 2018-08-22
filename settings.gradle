@@ -1,1 +1,2 @@
-include ':gradlestuff', ':mythemeapp', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule', ':fontawesomeapp', ':appmohan', ':rippleeffecttextview', ':bottomsheet', ':recyclerviewradiobutton', ':svgdesignui', ':camera2', ':cameratwoapi', ':htmltextview'
+include ':gradlestuff', ':mythemeapp', ':uidynamic', ':MaterialThemeDemo', ':uidynamicref', ':testmodule', ':fontawesomeapp', ':appmohan', ':rippleeffecttextview', ':bottomsheet', ':recyclerviewradiobutton', ':svgdesignui', ':camera2', ':cameratwoapi', ':htmltextview', ':discreetseekbar', ':camerasurfaceview', ':emailcontactlist', ':dynamicfragment'
+include ':seekbardotted'
