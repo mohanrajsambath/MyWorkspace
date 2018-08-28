@@ -12,7 +12,7 @@ import java.util.Date;
 import mohan.com.datetimepicker.R;
 import mohan.com.datetimepicker.utils.SingleDateAndTimePicker;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivitySinglePicker extends AppCompatActivity implements View.OnClickListener{
 
 
     private TextView txtVw_date;

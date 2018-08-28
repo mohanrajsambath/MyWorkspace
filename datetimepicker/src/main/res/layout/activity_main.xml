@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8dcacf"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MainActivitySinglePicker">
 
     <TextView
         android:id="@+id/txtVw_date_label"

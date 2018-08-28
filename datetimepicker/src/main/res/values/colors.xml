@@ -10,6 +10,7 @@
     <color name="picker_default_text_color">#999</color>
     <color name="picker_default_selected_text_color">#3CC286</color>
     <color name="picker_default_selector_color">#F8E71C</color>
+    <color name="textColor">#6E6E6E</color>
 
     <!--<color name="picker_default_selected_text_color">@android:color/black</color>
     <color name="picker_default_selector_color">#646464</color>-->
