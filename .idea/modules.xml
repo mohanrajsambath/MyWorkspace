@@ -10,12 +10,14 @@
       <module fileurl="file://$PROJECT_DIR$/camerasurfaceview/camerasurfaceview.iml" filepath="$PROJECT_DIR$/camerasurfaceview/camerasurfaceview.iml" />
       <module fileurl="file://$PROJECT_DIR$/cameratwoapi/cameratwoapi.iml" filepath="$PROJECT_DIR$/cameratwoapi/cameratwoapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/datetimepicker/datetimepicker.iml" filepath="$PROJECT_DIR$/datetimepicker/datetimepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datetimepicker2/datetimepicker2.iml" filepath="$PROJECT_DIR$/datetimepicker2/datetimepicker2.iml" />
       <module fileurl="file://$PROJECT_DIR$/discreetseekbar/discreetseekbar.iml" filepath="$PROJECT_DIR$/discreetseekbar/discreetseekbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamicfragment/dynamicfragment.iml" filepath="$PROJECT_DIR$/dynamicfragment/dynamicfragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/emailcontactlist/emailcontactlist.iml" filepath="$PROJECT_DIR$/emailcontactlist/emailcontactlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" filepath="$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextview/htmltextview.iml" filepath="$PROJECT_DIR$/htmltextview/htmltextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" filepath="$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" filepath="$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewswipereveal/recyclerviewswipereveal.iml" filepath="$PROJECT_DIR$/recyclerviewswipereveal/recyclerviewswipereveal.iml" />

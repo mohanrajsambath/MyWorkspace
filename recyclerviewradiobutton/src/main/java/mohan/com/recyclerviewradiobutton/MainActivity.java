@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements TemplateSelectionListener {
-    private RecyclerView offerRecyclerView;
+    public RecyclerView offerRecyclerView;
     TemplateSelectionListener mlistener;
     private TextView textView_id;
 
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity implements TemplateSelection
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        offerRecyclerView = (RecyclerView) findViewById(R.id.offers_lst);
-        textView_id = (TextView)findViewById(R.id.offers);
+        offerRecyclerView = findViewById(R.id.offers_lst);
+        textView_id = findViewById(R.id.offers);
 
         LinearLayoutManager recyclerLayoutManager = new LinearLayoutManager(this);
         offerRecyclerView.setLayoutManager(recyclerLayoutManager);
@@ -59,9 +59,6 @@ public class MainActivity extends AppCompatActivity implements TemplateSelection
     public void onTemplateSelected(String templateId, String templateName) {
         if(!templateId.isEmpty()) {
             textView_id.setText(templateId);
-        }else{
-
         }
-
     }
 }

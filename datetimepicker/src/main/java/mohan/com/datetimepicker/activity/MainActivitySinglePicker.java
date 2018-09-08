@@ -11,6 +11,7 @@ import java.util.Date;
 
 import mohan.com.datetimepicker.R;
 import mohan.com.datetimepicker.utils.SingleDateAndTimePicker;
+/*https://github.com/mohanrajsambath/SingleDateAndTimePicker*/
 
 public class MainActivitySinglePicker extends AppCompatActivity implements View.OnClickListener{
 
@@ -23,9 +24,9 @@ public class MainActivitySinglePicker extends AppCompatActivity implements View.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtVw_date = (TextView)findViewById(R.id.txtVw_date);
-        imgVw_close_datePicker = (ImageView)findViewById( R.id.imgVw_close_datePicker);
-        fL_date_bottomSheet =(FrameLayout)findViewById(R.id.fL_date_bottomSheet);
+        txtVw_date = findViewById(R.id.txtVw_date);
+        imgVw_close_datePicker = findViewById( R.id.imgVw_close_datePicker);
+        fL_date_bottomSheet = findViewById(R.id.fL_date_bottomSheet);
         txtVw_date.setOnClickListener(this);
         imgVw_close_datePicker.setOnClickListener(this);
 
@@ -36,7 +37,7 @@ public class MainActivitySinglePicker extends AppCompatActivity implements View.
     }
 
     private void setDateTimePicker() {
-        final SingleDateAndTimePicker singleDateAndTimePicker = (SingleDateAndTimePicker) findViewById(R.id.single_day_picker);
+        final SingleDateAndTimePicker singleDateAndTimePicker = findViewById(R.id.single_day_picker);
         singleDateAndTimePicker.addOnDateChangedListener(new SingleDateAndTimePicker.OnDateChangedListener() {
             @Override
             public void onDateChanged(String displayed, Date date) {
