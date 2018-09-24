@@ -11,6 +11,13 @@
     <color name="picker_default_selected_text_color">#3CC286</color>
     <color name="picker_default_selector_color">#F8E71C</color>
     <color name="textColor">#6E6E6E</color>
+    <color name="white">#fff</color>
+    <color name="orange">#e97400</color>
+    <color name="green">#34b309</color>
+    <color name="bluelight">#657cff</color>
+    <color name="bluelight_1">#3CC286</color>
+    <color name="bluelight_2">#101213</color>
+    <color name="bluelight_3">#202426</color>
 
     <!--<color name="picker_default_selected_text_color">@android:color/black</color>
     <color name="picker_default_selector_color">#646464</color>-->

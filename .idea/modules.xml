@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" filepath="$PROJECT_DIR$/fontawesomeapp/fontawesomeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextview/htmltextview.iml" filepath="$PROJECT_DIR$/htmltextview/htmltextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/moduleremovetest/moduleremovetest.iml" filepath="$PROJECT_DIR$/moduleremovetest/moduleremovetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" filepath="$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" filepath="$PROJECT_DIR$/recyclerviewradiobutton/recyclerviewradiobutton.iml" />
