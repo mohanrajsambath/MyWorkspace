@@ -9,10 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/MaterialThemeDemo" />
-            <option value="$PROJECT_DIR$/appmohan" />
             <option value="$PROJECT_DIR$/bottomsheet" />
-            <option value="$PROJECT_DIR$/camera2" />
-            <option value="$PROJECT_DIR$/camerasurfaceview" />
             <option value="$PROJECT_DIR$/cameratwoapi" />
             <option value="$PROJECT_DIR$/datetimepicker" />
             <option value="$PROJECT_DIR$/datetimepicker2" />
@@ -22,16 +19,13 @@
             <option value="$PROJECT_DIR$/fontawesomeapp" />
             <option value="$PROJECT_DIR$/gradlestuff" />
             <option value="$PROJECT_DIR$/htmltextview" />
-            <option value="$PROJECT_DIR$/moduleremovetest" />
             <option value="$PROJECT_DIR$/multiandsingleselectionrecyclerview" />
             <option value="$PROJECT_DIR$/mythemeapp" />
             <option value="$PROJECT_DIR$/recyclerviewradiobutton" />
             <option value="$PROJECT_DIR$/recyclerviewswipereveal" />
-            <option value="$PROJECT_DIR$/recyswipedelete1" />
             <option value="$PROJECT_DIR$/rippleeffecttextview" />
             <option value="$PROJECT_DIR$/seekbardotted" />
             <option value="$PROJECT_DIR$/svgdesignui" />
-            <option value="$PROJECT_DIR$/swiperecyaction1" />
             <option value="$PROJECT_DIR$/testmodule" />
             <option value="$PROJECT_DIR$/uidynamic" />
             <option value="$PROJECT_DIR$/uidynamicref" />
