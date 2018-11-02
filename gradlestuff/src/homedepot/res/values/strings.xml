@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">HDNewsAlpha</string>
     <string name="app_desc">
-        The Home Depot, Inc. or Home Depot is an American home improvement supplies retailing company that sells tools, construction products, and services. The company is headquartered at the Atlanta Store Support Center in unincorporated Cobb County, Georgia (with an Atlanta mailing address).
-It operates many big-box format stores across the United States (including all 50 states, the District of Columbia, Puerto Rico, the Virgin Islands, and Guam), all 10 provinces of Canada, and the country of Mexico. The MRO company Interline Brands is also owned by The Home Depot with 70 distribution centers across the United States.
-The Home Depot is the largest home improvement retailer in the United States, ahead of rival Lowe's.
+        The Home Depot Inc or Home Depot is an American home improvement supplies retailing company that sells tools.
     </string>
+
+    <!--<string name="app_desc">
+        The Home Depot Inc or Home Depot is an American home improvement supplies retailing company that sells tools, construction products, and services. The company is headquartered at the Atlanta Store Support Center in unincorporated Cobb County, Georgia with an Atlanta mailing address
+It operates many big-box format stores across the United States including all 50 states, the District of Columbia, Puerto Rico, the Virgin Islands, and Guam all 10 provinces of Canada, and the country of Mexico. The MRO company Interline Brands is also owned by The Home Depot with 70 distribution centers across the United States.
+The Home Depot is the largest home improvement retailer in the United States, ahead of rival Lowe's.
+    </string>-->
 
     <string name="action_logout">Logout</string>
 
