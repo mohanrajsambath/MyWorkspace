@@ -72,10 +72,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.OnMarkerC
 
 
     override fun onMarkerClick(p0: Marker?) = false
-    /*override fun onMarkerClick(p0: Marker?): Boolean {
-        //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-
-    }*/
+    /*override fun onMarkerClick(p0: Marker?): Boolean {}*/
 
     private fun setUpMap() {
         if (ActivityCompat.checkSelfPermission(this,
