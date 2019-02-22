@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">gradlestuff</string>
     <string name="desc_firebase_lockup">Firebase logo and name</string>
     <string name="emailpassword_title_text">Email and Password</string>
@@ -83,4 +83,17 @@
 
     <!-- Snackbars -->
     <string name="snackbar_action">Action</string>
+
+    <string name="app_desc" tools:ignore="StringEscaping">
+        Each build variant represents a different version of your app that you can build.</string>
+
+    <!--<string name="app_desc" tools:ignore="StringEscaping">
+        Each build variant represents a different version of your app that you can build. For example, you might want to build one version of your app that\'s free, with a limited set of content, and another paid version that includes more. You can also build different versions of your app that target different devices, based on API level or other device variations. However, if you want to build different versions based on the device ABI or screen density, instead build multiple APKs.
+
+Build variants are the result of Gradle using a specific set of rules to combine settings, code, and resources configured in your build types and product flavors. Although you do not configure build variants directly, you do configure the build types and product flavors that form them.
+
+For example, a "demo" product flavor can specify different features and device requirements, such as custom source code, resources, and minimum API levels, while the "debug" build type applies different build and packaging settings, such as debug options and signing keys. The resulting build variant is the "demoDebug" version of your app, and it includes a combination of the configurations and resources included in the "demo" product flavor, "debug" build type, and main/ source set.
+
+
+    </string>-->
 </resources>

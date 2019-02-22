@@ -369,6 +369,9 @@
 
     <!-- Text Styles -->
     <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="textColor">@color/colorPrimary</item>
+        <item name="textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title">

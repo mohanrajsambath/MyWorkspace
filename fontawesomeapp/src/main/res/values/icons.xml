@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="fa_icon_areachart">&#xf1fe;</string>
+    <string name="fa_icon_piechart">&#xf200;</string>
+    <string name="fa_icon_linechart">&#xf201;</string>
+    <string name="fa_icon_500px">&#xf26e;</string>
+    <string name="fa_icon_affiliatetheme">&#xf36b;</string>
+    <string name="fa_icon_dandd">&#xf38d;</string>
+    <string name="fa_icon_flip_camera">&#xf2f1;</string>
+    <string name="fa_icon_circle">&#xf111;</string>
+    <string name="fa_icon_scriptedit">&#xf4a4;</string>
+    <string name="fa_icon_cog">&#xf013;</string>
+    <string name="fa_icon_time">&#xf00d;</string>
+
+
+
+</resources>

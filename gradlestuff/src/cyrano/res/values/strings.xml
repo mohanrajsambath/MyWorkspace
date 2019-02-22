@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Cyrano</string>
+    <string name="app_name">CyranoAlpha</string>
+    <string name="app_desc">
+        Cyrano de Bergerac is a play written in 1897 by Edmond Rostand.</string>
+    <!--<string name="app_desc">
+        Cyrano de Bergerac is a play written in 1897 by Edmond Rostand. Although there was a real Cyrano de Bergerac, the play is a fictionalization of his life that follows the broad outlines of it.
+The entire play is written in verse, in rhyming couplets of twelve syllables per line, very close to the classical alexandrine form, but the verses sometimes lack a caesura. It is also meticulously researched, down to the names of the members of the Académie française and the dames précieuses glimpsed before the performance in the first scene.
+The play has been translated and performed many times, and is responsible for introducing the word "panache" into the English language. Cyrano (the character) is in fact famed for his panache, and the play ends with him saying "My panache" just before his death. The two most famous English translations are those by Brian Hooker and Anthony Burgess.
+    </string>-->
+
+    <string name="action_logout">Logout</string>
 </resources>

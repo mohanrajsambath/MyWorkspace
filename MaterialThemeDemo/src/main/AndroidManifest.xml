@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- @formatter:off -->
+<!--suppress ALL -->
 <manifest
     package="com.cc.android.materialthemes"
     xmlns:android="http://schemas.android.com/apk/res/android">

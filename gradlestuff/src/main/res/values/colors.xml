@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorAccent">@color/material_green_a100</color>
+    <color name="colorAccent">@color/material_green_a700</color>
     <color name="colorPrimary">@color/material_green_500</color>
     <color name="colorPrimaryDark">@color/material_green_700</color>
 
-    <color name="colorHomedepotAccent">@color/material_orange_a100</color>
+    <color name="colorHomedepotAccent">@color/material_gray_050</color>
     <color name="colorHomedepotPrimary">@color/material_orange_500</color>
     <color name="colorHomedepotPrimaryDark">@color/material_orange_700</color>
 
-    <color name="colorUpsPrimary">@color/material_yellow_500</color>
-    <color name="colorUpsPrimaryDark">@color/material_yellow_700</color>
-    <color name="colorUpsAccent">@color/colorUpsAccent_a100</color>
+    <color name="colorUpsAccent">@color/material_yellow_800</color>
+    <color name="colorUpsPrimary">@color/material_brown_500</color>
+    <color name="colorUpsPrimaryDark">@color/material_brown_700</color>
 
 
-    <color name="colorUpsAccent_a100">#795548</color>
+
     <!-- Material Color Palette -->
     <color name="material_gray_050">#FAFAFA</color>
     <color name="material_gray_100">#F5F5F5</color>
@@ -147,6 +147,21 @@
     <color name="material_purple_a400">#D500F9</color>
     <color name="material_purple_a700">#AA00FF</color>
 
+    <color name="material_brown_050">#EFEBE9</color>
+    <color name="material_brown_100">#D7CCC8</color>
+    <color name="material_brown_200">#BCAAA4</color>
+    <color name="material_brown_300">#A1887F</color>
+    <color name="material_brown_400">#8D6E63</color>
+    <color name="material_brown_500">#795548</color>
+    <color name="material_brown_600">#6D4C41</color>
+    <color name="material_brown_700">#5D4037</color>
+    <color name="material_brown_800">#4E342E</color>
+    <color name="material_brown_900">#3E2723</color>
+    <color name="material_brown_a100">#FFFFA383</color>
+    <color name="material_brown_a200">#FFB64E3C</color>
+    <color name="material_brown_a400">#FFAF4620</color>
+    <color name="material_brown_a700">#FF7B280A</color>
+
     <!-- Selectors -->
     <color name="selector_normal">@android:color/transparent</color>
     <color name="selector_white_focused">#22FFFFFF</color>
@@ -167,6 +182,8 @@
     <color name="selector_teal_pressed">#4400BFA5</color>
     <color name="selector_blue_focused">#222962FF</color>
     <color name="selector_blue_pressed">#442962FF</color>
+    <color name="selector_brown_focused">#1B795548</color>
+    <color name="selector_brown_pressed">#49795548</color>
     <color name="selector_purple_focused">#22AA00FF</color>
     <color name="selector_purple_pressed">#44AA00FF</color>
 
