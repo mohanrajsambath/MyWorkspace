@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--<style name="Base.Widget.AppCompat.SeekBar" parent="AppTheme">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/abc_seekbar_track_material</item>
+        <item name="android:indeterminateDrawable">@drawable/abc_seekbar_track_material</item>
+        <item name="android:thumb">@drawable/abc_seekbar_thumb_material</item>
+        <item name="android:focusable">true</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>-->
+    <!-- A seek bar with tick marks at each progress value. -->
+    <style name="CustomDiscrete" parent="AppTheme">
+        <item name="colorAccent">@color/black_transparent</item>
+        <item name="tickMark">@drawable/ic_cursor_vertical</item>
+        <item name="tickMarkTint">@color/white</item>
+        <item name="android:thumb">@drawable/ic_circle</item>
+        <item name="android:thumbTint">@color/white</item>
+        <item name="android:indeterminateOnly">false</item>
+        <!--<item name="colorAccent">#ffff00</item>-->
+        <!--<item name="android:progressDrawable">@drawable/progress</item>-->
+        <!--<item name="android:progressDrawable">@drawable/ic_golf_course</item>-->
+        <!--<item name="android:indeterminateDrawable">@drawable/ic_cursor_vertical</item>-->
+        <item name="android:focusable">true</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+</resources>

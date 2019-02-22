@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private EditText edTxt_email,edTxt_password;
     private Button button_login;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +42,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         edTxt_email=(EditText)findViewById(R.id.edTxt_email);
         edTxt_password=(EditText)findViewById(R.id.edTxt_password);
         button_login=(Button)findViewById(R.id.button_login);
+
         button_login.setOnClickListener(this);
+
     }
+
+
+
 
     @Override
     public void onClick(View v) {
