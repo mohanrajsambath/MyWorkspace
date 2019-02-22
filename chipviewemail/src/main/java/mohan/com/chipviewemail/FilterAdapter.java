@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.tokenautocomplete.FilteredArrayAdapter;
-
 import java.util.List;
+
+import mohan.com.chiputils.FilteredArrayAdapter;
 
 public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
 

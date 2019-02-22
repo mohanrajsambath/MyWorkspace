@@ -8,7 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.tokenautocomplete.TokenCompleteTextView;
+import mohan.com.chiputils.TokenCompleteTextView;
+
 
 /**
  * Sample token completion view for basic contact info
@@ -30,7 +31,7 @@ public class ContactsCompletionView extends TokenCompleteTextView<SimpleContact>
     @Override
     protected View getViewForObject(SimpleContact contact) {
         LayoutInflater l = (LayoutInflater) getContext().getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-        View tokenView = l.inflate(R.layout.item_autocomplete_contact, (ViewGroup) getParent(), false);
+        View tokenView = l.inflate(R.layout.item_autocomplete_contact_ref, (ViewGroup) getParent(), false);
         TokenTextView textView = tokenView.findViewById(R.id.token_text);
         ImageView icon = tokenView.findViewById(R.id.icon);
         textView.setText(contact.getName());

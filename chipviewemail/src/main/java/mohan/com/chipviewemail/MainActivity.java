@@ -6,10 +6,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.tokenautocomplete.TokenCompleteTextView;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import mohan.com.chiputils.TokenCompleteTextView;
 
 public class MainActivity extends AppCompatActivity implements TokenCompleteTextView.TokenListener<SimpleContact> {
 
@@ -53,6 +53,22 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
 
     private void setSampleContact() {
         contacts = new ArrayList<>();
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Amul", "amul@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Buffer", "buffer@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Chava", "chava@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Gopi", "gopi@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Gowtham", "gowtham@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Jomy", "jomy@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Kirithika", "kirithi@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Mandy", "mandy@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Soundarya", "sound@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Suji", "suji@gmail.com"));
+        contacts.add(new SimpleContact(R.drawable.ic_person, "Suresh", "suresh@gmail.com"));
+    }
+
+
+    /*private void setSampleContact() {
+        contacts = new ArrayList<>();
         contacts.add(new SimpleContact(R.drawable.female, "Thanh Ngan", "ngan@gmail.com"));
         contacts.add(new SimpleContact(R.drawable.ic_person, "Quang Minh", "minh@gmail.com"));
         contacts.add(new SimpleContact(R.drawable.male, "Tran Tinh", "thanh_67@gmail.com"));
@@ -62,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
         contacts.add(new SimpleContact(R.drawable.female, "Kim Chi", "kimchi@gmail.com"));
         contacts.add(new SimpleContact(R.drawable.male, "Quoc Cuong", "cuong@gmail.com"));
         contacts.add(new SimpleContact(R.drawable.female, "Hai Yen", "hai_yen@gmail.com"));
-    }
+    }*/
 
     @Override
     public void onTokenAdded(SimpleContact token) {
@@ -72,5 +88,10 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
     @Override
     public void onTokenRemoved(SimpleContact token) {
         Log.d("Main", "A Token removed");
+    }
+
+    @Override
+    public void onTokenIgnored(SimpleContact token) {
+
     }
 }
