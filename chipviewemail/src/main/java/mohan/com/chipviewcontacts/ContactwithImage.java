@@ -1,18 +1,27 @@
-package mohan.com.contactloader;
+package mohan.com.chipviewcontacts;
 
 import java.util.ArrayList;
+
+import mohan.com.contactloader.ContactEmail;
+import mohan.com.contactloader.ContactPhone;
 
 public class ContactwithImage {
 	public String id;
 	public String name;
+	private int drawableId;
 	public ArrayList<ContactEmail> emails;
 	public ArrayList<ContactPhone> numbers;
 
-	public ContactwithImage(String id, String name) {
+	public ContactwithImage(int drawableId,String id, String name) {
+		this.drawableId = drawableId;
 		this.id = id;
 		this.name = name;
 		this.emails = new ArrayList<ContactEmail>();
 		this.numbers = new ArrayList<ContactPhone>();
+	}
+
+	public int getDrawableId() {
+		return drawableId;
 	}
 
 	@Override

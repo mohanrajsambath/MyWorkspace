@@ -1,7 +1,9 @@
-package mohan.com.contactloader;
+package mohan.com.chipviewcontacts;
 
+import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
+import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
@@ -10,6 +12,8 @@ import android.support.v4.content.CursorLoader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import mohan.com.chipviewemail.R;
 
 // new ContactFetcher(this).fetchAll();
 public class ContactFetcherwithImage {
@@ -21,10 +25,12 @@ public class ContactFetcherwithImage {
     }
 
     public ArrayList<ContactwithImage> fetchAll() {
+        Uri photoUri = null;
         String[] projectionFields = new String[]{
                 ContactsContract.Contacts._ID,
                 ContactsContract.Contacts.DISPLAY_NAME,
                 ContactsContract.Contacts.PHOTO_ID
+                ContactsContract.Contacts.CONTENT_URI
 
         };
         ArrayList<ContactwithImage> listContacts = new ArrayList<>();
@@ -42,11 +48,12 @@ public class ContactFetcherwithImage {
         if (c.moveToFirst()) {
             int idIndex = c.getColumnIndex(ContactsContract.Contacts._ID);
             int nameIndex = c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
-            int photoIndex = c.getColumnIndex(ContactsContract.Contacts.PHOTO_FILE_ID);
+
+           // String photoIndex = c.getColumnIndex(ContactsContract.Contacts.CONTENT_URI);
             do {
                 String contactId = c.getString(idIndex);
                 String contactDisplayName = c.getString(nameIndex);
-                ContactwithImage contact = new ContactwithImage(contactId, contactDisplayName);
+                ContactwithImage contact = new ContactwithImage(R.drawable.ic_person,contactId, contactDisplayName);
                 contactsMap.put(contactId, contact);
                 listContacts.add(contact);
             } while (c.moveToNext());
@@ -133,4 +140,7 @@ public class ContactFetcherwithImage {
 
         email.close();
     }
+
+
+
 }
