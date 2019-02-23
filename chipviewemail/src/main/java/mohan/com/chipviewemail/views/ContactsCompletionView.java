@@ -1,4 +1,4 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewemail.views;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,7 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import mohan.com.chiputils.TokenCompleteTextView;
+import mohan.com.chipviewemail.chiputils.TokenCompleteTextView;
+import mohan.com.chipviewemail.R;
+import mohan.com.chipviewemail.model.SimpleContact;
 
 
 /**

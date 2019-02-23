@@ -20,9 +20,9 @@
             android:layout_gravity="center" />
 
         <SearchView
+            android:id="@+id/searchView"
             android:background="#5b74a8"
             android:padding="8dp"
-            android:id="@+id/searchView"
             android:drawableLeft="@android:drawable/ic_menu_search"
             android:layout_width="wrap_content"
             android:singleLine="true"

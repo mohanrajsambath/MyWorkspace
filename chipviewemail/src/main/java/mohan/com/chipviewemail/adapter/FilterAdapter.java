@@ -1,4 +1,4 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewemail.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,7 +11,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mohan.com.chiputils.FilteredArrayAdapter;
+import mohan.com.chipviewemail.chiputils.FilteredArrayAdapter;
+import mohan.com.chipviewemail.R;
+import mohan.com.chipviewemail.model.SimpleContact;
 
 public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
 

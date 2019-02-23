@@ -1,4 +1,4 @@
-package mohan.com.chiputils;
+package mohan.com.chipviewemail.chiputils;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
