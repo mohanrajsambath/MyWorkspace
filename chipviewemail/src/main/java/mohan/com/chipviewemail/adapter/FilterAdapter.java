@@ -11,8 +11,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mohan.com.chipviewemail.chiputils.FilteredArrayAdapter;
 import mohan.com.chipviewemail.R;
+import mohan.com.chipviewemail.chiputils.FilteredArrayAdapter;
 import mohan.com.chipviewemail.model.SimpleContact;
 
 public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
@@ -44,4 +44,6 @@ public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
         mask = mask.toLowerCase();
         return person.getName().toLowerCase().startsWith(mask) || person.getEmail().toLowerCase().startsWith(mask);
     }
+
+
 }

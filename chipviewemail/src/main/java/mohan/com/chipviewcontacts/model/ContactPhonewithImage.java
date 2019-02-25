@@ -1,4 +1,4 @@
-package mohan.com.chipviewcontacts;
+package mohan.com.chipviewcontacts.model;
 
 public class ContactPhonewithImage {
 	public String number;

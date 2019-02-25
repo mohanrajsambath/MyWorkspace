@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import mohan.com.chipviewcontacts.model.ContactwithImage;
 import mohan.com.chipviewemail.R;
 import mohan.com.chipviewemail.chiputils.FilteredArrayAdapter;
 

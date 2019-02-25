@@ -1,6 +1,5 @@
-package mohan.com.chipviewcontacts;
+package mohan.com.chipviewcontacts.model;
 
-import android.content.ContentUris;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
@@ -29,8 +28,8 @@ public class ContactFetcherwithImage {
         String[] projectionFields = new String[]{
                 ContactsContract.Contacts._ID,
                 ContactsContract.Contacts.DISPLAY_NAME,
-                ContactsContract.Contacts.PHOTO_ID
-                ContactsContract.Contacts.CONTENT_URI
+                //ContactsContract.Contacts.PHOTO_ID,
+                //ContactsContract.Contacts.CONTENT_URI,
 
         };
         ArrayList<ContactwithImage> listContacts = new ArrayList<>();
@@ -49,11 +48,11 @@ public class ContactFetcherwithImage {
             int idIndex = c.getColumnIndex(ContactsContract.Contacts._ID);
             int nameIndex = c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME);
 
-           // String photoIndex = c.getColumnIndex(ContactsContract.Contacts.CONTENT_URI);
+            // String photoIndex = c.getColumnIndex(ContactsContract.Contacts.CONTENT_URI);
             do {
                 String contactId = c.getString(idIndex);
                 String contactDisplayName = c.getString(nameIndex);
-                ContactwithImage contact = new ContactwithImage(R.drawable.ic_person,contactId, contactDisplayName);
+                ContactwithImage contact = new ContactwithImage(R.drawable.ic_person, contactId, contactDisplayName);
                 contactsMap.put(contactId, contact);
                 listContacts.add(contact);
             } while (c.moveToNext());
@@ -141,6 +140,6 @@ public class ContactFetcherwithImage {
         email.close();
     }
 
-
-
 }
+
+

@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Contact {
 	public String id;
 	public String name;
+
+
+
+	String emailId;
 	public ArrayList<ContactEmail> emails;
 	public ArrayList<ContactPhone> numbers;
 
@@ -31,9 +35,22 @@ public class Contact {
 
 	public void addEmail(String address, String type) {
 		emails.add(new ContactEmail(address, type));
+		if(address.length()>0){
+			System.out.println("ModelClass Email:"+address);
+			setEmailId(address);
+		}
+
 	}
 
 	public void addNumber(String number, String type) {
 		numbers.add(new ContactPhone(number, type));
 	}
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
 }
