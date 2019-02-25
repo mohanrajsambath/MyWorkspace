@@ -1,4 +1,4 @@
-package mohan.com.chiputils;
+package mohan.com.chipviewemail.chiputils;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -38,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
     SearchView search;
     SelectUserAdapter adapter;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        selectUsers = new ArrayList<SelectUser>();
+        setContentView(R.layout.activity_main);
+        listView =  findViewById(R.id.contacts_list);
+        search =  findViewById(R.id.searchView);
+        selectUsers = new ArrayList<>();
         resolver = this.getContentResolver();
-        listView = (ListView) findViewById(R.id.contacts_list);
-        search = (SearchView) findViewById(R.id.searchView);
         phones = getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, null, null, ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME + " ASC");
         LoadContact loadContact = new LoadContact();
         loadContact.execute();
-
-
-
         //*** setOnQueryTextListener ***
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-
         }
 
         @Override

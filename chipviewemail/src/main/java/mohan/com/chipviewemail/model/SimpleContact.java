@@ -1,4 +1,4 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewemail.model;
 
 public class SimpleContact {
     private int drawableId;

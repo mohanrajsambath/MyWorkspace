@@ -1,4 +1,4 @@
-package mohan.com.chiputils;
+package mohan.com.chipviewemail.chiputils;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

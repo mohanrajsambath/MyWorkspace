@@ -1,4 +1,4 @@
-package mohan.com.chiputils;
+package mohan.com.chipviewemail.chiputils;
 
 import android.content.res.ColorStateList;
 import android.text.style.TextAppearanceSpan;

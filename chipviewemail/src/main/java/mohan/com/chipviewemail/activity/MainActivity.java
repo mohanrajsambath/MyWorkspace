@@ -1,4 +1,4 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewemail.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import mohan.com.chiputils.TokenCompleteTextView;
+import mohan.com.chipviewemail.R;
+import mohan.com.chipviewemail.adapter.FilterAdapter;
+import mohan.com.chipviewemail.chiputils.TokenCompleteTextView;
+import mohan.com.chipviewemail.model.SimpleContact;
+import mohan.com.chipviewemail.views.ContactsCompletionView;
 
 public class MainActivity extends AppCompatActivity implements TokenCompleteTextView.TokenListener<SimpleContact> {
 
@@ -17,11 +21,13 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
     private FilterAdapter filterAdapter;
     private ContactsCompletionView autoCompleteTextView;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_main);
+
         setSampleContact();
 
         autoCompleteTextView = findViewById(R.id.autocomplete_textview);
@@ -51,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
         });
     }
 
+
+
     private void setSampleContact() {
         contacts = new ArrayList<>();
         contacts.add(new SimpleContact(R.drawable.ic_person, "Amul", "amul@gmail.com"));
@@ -65,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements TokenCompleteText
         contacts.add(new SimpleContact(R.drawable.ic_person, "Suji", "suji@gmail.com"));
         contacts.add(new SimpleContact(R.drawable.ic_person, "Suresh", "suresh@gmail.com"));
     }
+
+
+
 
 
     /*private void setSampleContact() {
