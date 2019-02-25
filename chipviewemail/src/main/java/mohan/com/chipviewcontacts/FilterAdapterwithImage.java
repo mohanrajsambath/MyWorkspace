@@ -1,4 +1,4 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewcontacts;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,11 +11,13 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import mohan.com.chiputils.FilteredArrayAdapter;
+import mohan.com.chipviewcontacts.model.ContactwithImage;
+import mohan.com.chipviewemail.R;
+import mohan.com.chipviewemail.chiputils.FilteredArrayAdapter;
 
-public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
+public class FilterAdapterwithImage extends FilteredArrayAdapter<ContactwithImage> {
 
-    public FilterAdapter(Context context, int resource, List<SimpleContact> objects) {
+    public FilterAdapterwithImage(Context context, int resource, List<ContactwithImage> objects) {
         super(context, resource,  objects);
     }
 
@@ -28,9 +30,9 @@ public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
             convertView = layoutInflater.inflate(R.layout.item_contact, parent, false);
         }
 
-        SimpleContact contact = getItem(position);
-        ((TextView) convertView.findViewById(R.id.name)).setText(contact != null ? contact.getName() : null);
-        ((TextView) convertView.findViewById(R.id.email)).setText(contact != null ? contact.getEmail() : null);
+        ContactwithImage contact = getItem(position);
+        ((TextView) convertView.findViewById(R.id.name)).setText(contact != null ? contact.name : null);
+        ((TextView) convertView.findViewById(R.id.email)).setText(contact != null ? contact.emails.get(0).address : null);
         assert contact != null;
         ((ImageView) convertView.findViewById(R.id.icon)).setImageResource(contact.getDrawableId());
 
@@ -38,8 +40,8 @@ public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
     }
 
     @Override
-    protected boolean keepObject(SimpleContact person, String mask) {
+    protected boolean keepObject(ContactwithImage person, String mask) {
         mask = mask.toLowerCase();
-        return person.getName().toLowerCase().startsWith(mask) || person.getEmail().toLowerCase().startsWith(mask);
+        return person.name.toLowerCase().startsWith(mask) || person.emails.get(0).address.toLowerCase().startsWith(mask);
     }
 }

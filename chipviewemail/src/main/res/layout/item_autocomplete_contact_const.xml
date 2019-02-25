@@ -27,7 +27,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent">
 
-        <mohan.com.chipviewemail.TokenTextView
+        <mohan.com.chipviewemail.views.TokenTextView
             android:id="@+id/token_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

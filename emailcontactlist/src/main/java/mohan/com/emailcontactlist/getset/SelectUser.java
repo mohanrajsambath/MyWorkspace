@@ -2,9 +2,7 @@ package mohan.com.emailcontactlist.getset;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by Trinity Tuts on 10-01-2015.
- */
+
 public class SelectUser {
     String name;
 

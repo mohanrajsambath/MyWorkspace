@@ -1,8 +1,10 @@
-package mohan.com.chipviewemail;
+package mohan.com.chipviewemail.views;
 
 import android.content.Context;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
+
+import mohan.com.chipviewemail.R;
 
 /**
  * Simple custom view example to show how to get selected events from the token
