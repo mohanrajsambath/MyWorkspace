@@ -49,6 +49,7 @@ public class ChipViewContactLoaderActivity extends RuntimePermissionsActivity im
 
         //Set the action to be taken when a Token is clicked
         autoCompleteTextView.setTokenClickStyle(TokenCompleteTextView.TokenClickStyle.Select);
+
         final TextView inputContent = findViewById(R.id.input_content);
         View btnGet = findViewById(R.id.btn_get);
         btnGet.setOnClickListener(new View.OnClickListener() {

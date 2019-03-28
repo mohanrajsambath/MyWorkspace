@@ -39,17 +39,17 @@ public class FilterAdapter extends FilteredArrayAdapter<SimpleContact> {
         return convertView;
     }
 
-    @Override
+    /*@Override
     protected boolean keepObject(SimpleContact person, String mask) {
         mask = mask.toLowerCase();
         return  person.getEmail().toLowerCase().startsWith(mask);
-    }
+    }*/
 
-   /* @Override
+    @Override
     protected boolean keepObject(SimpleContact person, String mask) {
         mask = mask.toLowerCase();
         return person.getName().toLowerCase().startsWith(mask) || person.getEmail().toLowerCase().startsWith(mask);
-    }*/
+    }
 
 
 }

@@ -37,7 +37,7 @@
                     android:imeOptions="actionDone"
                     android:inputType="text|textNoSuggestions|textMultiLine"
                     android:nextFocusDown="@+id/editText"
-                    android:textColor="@android:color/white"
+                    android:textColor="@android:color/black"
                     android:dropDownVerticalOffset="100dp"
                     android:dropDownAnchor="@id/lL_to"
                     android:dropDownHeight="200dp"
