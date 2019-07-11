@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Aexperimentsinjava/Aexperimentsinjava.iml" filepath="$PROJECT_DIR$/Aexperimentsinjava/Aexperimentsinjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" filepath="$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidcamera2/androidcamera2.iml" filepath="$PROJECT_DIR$/androidcamera2/androidcamera2.iml" />

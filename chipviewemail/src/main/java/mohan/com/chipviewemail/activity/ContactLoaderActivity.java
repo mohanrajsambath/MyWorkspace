@@ -1,4 +1,4 @@
-package mohan.com.contactloader;
+package mohan.com.chipviewemail.activity;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -9,7 +9,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import mohan.com.chipviewemail.R;
-import mohan.com.chipviewemail.activity.RuntimePermissionsActivity;
+import mohan.com.contactloader.Contact;
+import mohan.com.contactloader.ContactFetcher;
+import mohan.com.contactloader.ContactsAdapter;
 
 public class ContactLoaderActivity extends RuntimePermissionsActivity {
 	ArrayList<Contact> listContacts;

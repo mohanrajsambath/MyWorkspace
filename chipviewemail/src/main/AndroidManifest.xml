@@ -19,7 +19,7 @@
 
         <!--<activity
             android:label="ContactLoader"
-            android:name="mohan.com.contactloader.ContactLoaderActivity">
+            android:name="mohan.com.chipviewemail.activity.ContactLoaderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
