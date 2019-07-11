@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imgVw_Logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_map_signs_solid"/>
+
+    <EditText
+        android:id="@+id/edTxt_CurrentReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/ic_flag_solid"
+        android:ems="10"
+        android:hint="Current Reading"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#2095AA"
+        android:textColorHint="#2095AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVw_Logo" />
+
+    <EditText
+        android:id="@+id/edTxt_EndReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/ic_flag_checkered_solid"
+        android:ems="10"
+        android:hint="End Reading"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="#2095AA"
+        android:textColorHint="#2095AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_CurrentReading" />
+
+
+    <EditText
+        android:id="@+id/edTxt_UnitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/ic_rupee_sign_regular"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#2095AA"
+        android:textColorHint="#2095AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_EndReading" />
+
+    <EditText
+        android:id="@+id/edTxt_FilledLitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Litre"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#2095AA"
+        android:textColorHint="#2095AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_UnitPrice" />
+
+    <EditText
+        android:id="@+id/edTxt_TotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableEnd="@drawable/ic_rupee_sign_regular"
+        android:ems="10"
+        android:hint="Cost"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textColor="#2095AA"
+        android:textColorHint="#2095AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_FilledLitre" />
+
+    <TextView
+        android:id="@+id/txtVw_StartReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Start"
+        android:textColor="#2095AA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_CurrentReading"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_CurrentReading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_CurrentReading" />
+
+    <TextView
+        android:id="@+id/txtVw_EndReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="End"
+        android:textColor="#2095AA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_EndReading"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_EndReading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_EndReading" />
+
+
+    <TextView
+        android:id="@+id/txtVw_UnitPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Per Litre"
+        android:textColor="#2095AA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_UnitPrice"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_UnitPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_UnitPrice" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_UnitPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edTxt_UnitPrice"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_UnitPrice"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/txtVw_TotalLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Filled"
+        android:textColor="#2095AA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_FilledLitre"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_FilledLitre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_FilledLitre" />
+
+    <TextView
+        android:id="@+id/txtVw_TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Total"
+        android:textColor="#2095AA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_TotalCost"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_TotalCost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_TotalCost" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="#2095AA"
+        android:text="Save"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Cancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="#2095AA"
+        android:text="Cancel"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_Save" />
+
+
+
+</android.support.constraint.ConstraintLayout>
