@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnFocusChangeListener, TextView.OnEditorActionListener {
     EditText edTxt_CurrentReading, edTxt_EndReading, edTxt_UnitPrice, edTxt_FilledLitre, edTxt_TotalCost;
     double mUnitPrice = 0.0, mFilledLitre = 0.0, mTotalCost = 0.0;
-    String strUnitPrice = "", strFilledLitre = "", strTotalCost = "";
+    String strCurrentReading = "",strEndReading = "",strUnitPrice = "", strFilledLitre = "", strTotalCost = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,9 +71,17 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
         switch (v.getId()) {
             case R.id.edTxt_CurrentReading:
+                strCurrentReading = edTxt_CurrentReading.getText().toString().trim();
+                if(strCurrentReading.length()>0) {
+
+                }
                 Toast.makeText(MainActivity.this, "CurrentReading", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.edTxt_EndReading:
+                strEndReading = edTxt_EndReading.getText().toString().trim();
+                if(strEndReading.length()>0) {
+
+                }
                 Toast.makeText(MainActivity.this, "EndReading", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.edTxt_UnitPrice:

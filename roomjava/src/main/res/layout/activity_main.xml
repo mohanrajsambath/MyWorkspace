@@ -219,6 +219,31 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn_Save" />
 
+    <TextView
+        android:id="@+id/txtVw_MilesReading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="0 Km/Ltr"
+        android:textColor="#2095AA"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/edTxt_EndReading"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_EndReading"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_CurrentReading"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_CurrentReading"
+        app:layout_constraintStart_toEndOf="@+id/edTxt_CurrentReading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edTxt_CurrentReading"
+        app:srcCompat="@drawable/ic_kilometer" />
 
 
 </android.support.constraint.ConstraintLayout>
