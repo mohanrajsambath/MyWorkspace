@@ -5,26 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
+
     <ImageView
         android:id="@+id/imgVw_Logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_map_signs_solid"/>
+        app:srcCompat="@drawable/ic_map_signs_solid"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/edTxt_CurrentReading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:drawableEnd="@drawable/ic_flag_solid"
+        android:drawableEnd="@drawable/ic_flag_checkered_solid"
         android:ems="10"
         android:hint="Current Reading"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:singleLine="true"
         android:textColor="#2095AA"
@@ -34,15 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imgVw_Logo" />
 
     <EditText
-        android:id="@+id/edTxt_EndReading"
+        android:id="@+id/edTxt_BegunReading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:drawableEnd="@drawable/ic_flag_checkered_solid"
+        android:drawableEnd="@drawable/ic_flag_solid"
         android:ems="10"
-        android:hint="End Reading"
+        android:hint="Begun Reading"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:singleLine="true"
         android:textColor="#2095AA"
@@ -68,7 +73,8 @@
         android:textColorHint="#2095AA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxt_EndReading" />
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_BegunReading"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edTxt_FilledLitre"
@@ -85,7 +91,8 @@
         android:textColorHint="#2095AA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxt_UnitPrice" />
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_UnitPrice"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/edTxt_TotalCost"
@@ -103,7 +110,8 @@
         android:textColorHint="#2095AA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edTxt_FilledLitre" />
+        app:layout_constraintTop_toBottomOf="@+id/edTxt_FilledLitre"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/txtVw_StartReading"
@@ -111,7 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:text="Start"
+        android:text="Now"
         android:textColor="#2095AA"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/edTxt_CurrentReading"
@@ -125,13 +133,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:text="End"
+        android:text="Begun"
         android:textColor="#2095AA"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/edTxt_EndReading"
-        app:layout_constraintEnd_toStartOf="@+id/edTxt_EndReading"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_BegunReading"
+        app:layout_constraintEnd_toStartOf="@+id/edTxt_BegunReading"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edTxt_EndReading" />
+        app:layout_constraintTop_toTopOf="@+id/edTxt_BegunReading" />
 
 
     <TextView
@@ -158,7 +166,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/edTxt_UnitPrice"
         app:layout_constraintTop_toTopOf="@+id/edTxt_UnitPrice"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:ignore="ContentDescription" />
 
 
     <TextView
@@ -228,8 +237,8 @@
         android:text="0 Km/Ltr"
         android:textColor="#2095AA"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/edTxt_EndReading"
-        app:layout_constraintBottom_toBottomOf="@+id/edTxt_EndReading"
+        app:layout_constraintStart_toEndOf="@+id/edTxt_BegunReading"
+        app:layout_constraintBottom_toBottomOf="@+id/edTxt_BegunReading"
         app:layout_constraintTop_toTopOf="@+id/edTxt_CurrentReading"
         app:layout_constraintEnd_toEndOf="parent"
          />

@@ -1,4 +1,4 @@
-package mohan.com.roomjava;
+package mohan.com.roomjava.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,11 +9,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import mohan.com.roomjava.R;
+
 public class MainActivity extends AppCompatActivity implements View.OnFocusChangeListener, TextView.OnEditorActionListener {
-    EditText edTxt_CurrentReading, edTxt_EndReading, edTxt_UnitPrice, edTxt_FilledLitre, edTxt_TotalCost;
+    EditText edTxt_CurrentReading, edTxt_BegunReading, edTxt_UnitPrice, edTxt_FilledLitre, edTxt_TotalCost;
     double mUnitPrice = 0.0, mFilledLitre = 0.0, mTotalCost = 0.0;
     String strCurrentReading = "",strEndReading = "",strUnitPrice = "", strFilledLitre = "", strTotalCost = "";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
 
     private void initViews() {
         edTxt_CurrentReading = findViewById(R.id.edTxt_CurrentReading);
-        edTxt_EndReading = findViewById(R.id.edTxt_EndReading);
+        edTxt_BegunReading = findViewById(R.id.edTxt_BegunReading);
         edTxt_UnitPrice = findViewById(R.id.edTxt_UnitPrice);
         edTxt_FilledLitre = findViewById(R.id.edTxt_FilledLitre);
         edTxt_TotalCost = findViewById(R.id.edTxt_TotalCost);
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         edTxt_TotalCost.setOnFocusChangeListener(this);*/
 
         edTxt_CurrentReading.setOnEditorActionListener(this);
-        edTxt_EndReading.setOnEditorActionListener(this);
+        edTxt_BegunReading.setOnEditorActionListener(this);
         edTxt_UnitPrice.setOnEditorActionListener(this);
         edTxt_FilledLitre.setOnEditorActionListener(this);
         edTxt_TotalCost.setOnEditorActionListener(this);
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
             case R.id.edTxt_CurrentReading:
                 Toast.makeText(MainActivity.this, "CurrentReading", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.edTxt_EndReading:
+            case R.id.edTxt_BegunReading:
                 Toast.makeText(MainActivity.this, "EndReading", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.edTxt_UnitPrice:
@@ -77,8 +78,8 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
                 }
                 Toast.makeText(MainActivity.this, "CurrentReading", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.edTxt_EndReading:
-                strEndReading = edTxt_EndReading.getText().toString().trim();
+            case R.id.edTxt_BegunReading:
+                strEndReading = edTxt_BegunReading.getText().toString().trim();
                 if(strEndReading.length()>0) {
 
                 }
@@ -141,3 +142,4 @@ public class MainActivity extends AppCompatActivity implements View.OnFocusChang
         return false;
     }
 }
+/*https://android.jlelse.eu/5-steps-to-implement-room-persistence-library-in-android-47b10cd47b24*/
