@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Aexperimentsinjava/Aexperimentsinjava.iml" filepath="$PROJECT_DIR$/Aexperimentsinjava/Aexperimentsinjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomLoadingIndicator/CustomLoadingIndicator.iml" filepath="$PROJECT_DIR$/CustomLoadingIndicator/CustomLoadingIndicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" filepath="$PROJECT_DIR$/MaterialThemeDemo/MaterialThemeDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyWorkspace.iml" filepath="$PROJECT_DIR$/MyWorkspace.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidcamera2/androidcamera2.iml" filepath="$PROJECT_DIR$/androidcamera2/androidcamera2.iml" />
@@ -19,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/gradlestuff/gradlestuff.iml" filepath="$PROJECT_DIR$/gradlestuff/gradlestuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextimg/htmltextimg.iml" filepath="$PROJECT_DIR$/htmltextimg/htmltextimg.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextview/htmltextview.iml" filepath="$PROJECT_DIR$/htmltextview/htmltextview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetpackapp/jetpackapp.iml" filepath="$PROJECT_DIR$/jetpackapp/jetpackapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" filepath="$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mykotlin/mykotlin.iml" filepath="$PROJECT_DIR$/mykotlin/mykotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />
@@ -32,7 +34,6 @@
       <module fileurl="file://$PROJECT_DIR$/screenaspectratio/screenaspectratio.iml" filepath="$PROJECT_DIR$/screenaspectratio/screenaspectratio.iml" />
       <module fileurl="file://$PROJECT_DIR$/seekbardotted/seekbardotted.iml" filepath="$PROJECT_DIR$/seekbardotted/seekbardotted.iml" />
       <module fileurl="file://$PROJECT_DIR$/svgdesignui/svgdesignui.iml" filepath="$PROJECT_DIR$/svgdesignui/svgdesignui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testmodule/testmodule.iml" filepath="$PROJECT_DIR$/testmodule/testmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/uidynamic/uidynamic.iml" filepath="$PROJECT_DIR$/uidynamic/uidynamic.iml" />
       <module fileurl="file://$PROJECT_DIR$/uidynamicref/uidynamicref.iml" filepath="$PROJECT_DIR$/uidynamicref/uidynamicref.iml" />
     </modules>

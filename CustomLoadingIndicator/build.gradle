@@ -42,6 +42,8 @@ dependencies {
     implementation "com.android.support:support-fragment:${rootProject.ext.supportLibraryVersion}"
     implementation "com.android.support:support-vector-drawable:${rootProject.ext.supportLibraryVersion}"
 
+    implementation 'com.agrawalsuneet.androidlibs:loaderspack:1.2.3'
+
 
 
 }

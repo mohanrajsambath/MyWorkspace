@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_nav_graph"
+    app:startDestination="@id/fragMain">
+
+    <fragment
+        android:id="@+id/fragMain"
+        android:name="mohan.com.jetpackapp.FragMain"
+        android:label="fragment_frag_main"
+        tools:layout="@layout/fragment_frag_main" >
+        <action
+            android:id="@+id/action_fragMain_to_fragChild1"
+            app:destination="@id/fragChild1" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragChild1"
+        android:name="mohan.com.jetpackapp.FragChild1"
+        android:label="fragment_frag_child1"
+        tools:layout="@layout/fragment_frag_child1" />
+    <fragment
+        android:id="@+id/fragChild2"
+        android:name="mohan.com.jetpackapp.FragChild2"
+        android:label="fragment_frag_child2"
+        tools:layout="@layout/fragment_frag_child2" />
+    <argument
+        android:name="nameToShow"
+        android:defaultValue="Andy"
+        app:argType="string" />
+</navigation>
