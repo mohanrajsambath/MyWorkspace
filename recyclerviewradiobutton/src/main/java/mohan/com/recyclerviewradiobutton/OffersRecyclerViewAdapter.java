@@ -2,7 +2,7 @@ package mohan.com.recyclerviewradiobutton;
 
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,9 +105,9 @@ public class OffersRecyclerViewAdapter extends RecyclerView.Adapter<OffersRecycl
 
         public ViewHolder(View view) {
             super(view);
-            offerName = (TextView) view.findViewById(R.id.offer_name);
-            offerAmount = (TextView) view.findViewById(R.id.offer_amount);
-            selectionState = (RadioButton) view.findViewById(R.id.offer_select);
+            offerName = view.findViewById(R.id.offer_name);
+            offerAmount = view.findViewById(R.id.offer_amount);
+            selectionState = view.findViewById(R.id.offer_select);
             //since only one radio button is allowed to be selected,
             // this condition un-checks previous selections
             /*selectionState.setOnClickListener(new View.OnClickListener() {

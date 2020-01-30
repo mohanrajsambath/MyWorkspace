@@ -1,6 +1,6 @@
 package mohan.com.utils;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 /*
  * Copyright (c) 2018. Created by Mohanraj.S,Innobot Systems on 22/8/18 for MyWorkspace

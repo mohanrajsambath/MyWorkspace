@@ -3,9 +3,9 @@ package mohan.com.datetimepicker.utils;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import android.text.format.DateFormat;
 import android.util.AttributeSet;
 import android.view.View;
@@ -103,13 +103,13 @@ public class SingleDateAndTimePicker extends LinearLayout {
 
         inflate(context, R.layout.single_day_picker, this);
 
-        yearsPicker = (WheelYearPicker) findViewById(R.id.yearPicker);
-        monthPicker = (WheelMonthPicker) findViewById(R.id.monthPicker);
-        daysOfMonthPicker = (WheelDayOfMonthPicker) findViewById(R.id.daysOfMonthPicker);
-        daysPicker = (WheelDayPicker) findViewById(R.id.daysPicker);
-        minutesPicker = (WheelMinutePicker) findViewById(R.id.minutesPicker);
-        hoursPicker = (WheelHourPicker) findViewById(R.id.hoursPicker);
-        amPmPicker = (WheelAmPmPicker) findViewById(R.id.amPmPicker);
+        yearsPicker = findViewById(R.id.yearPicker);
+        monthPicker = findViewById(R.id.monthPicker);
+        daysOfMonthPicker = findViewById(R.id.daysOfMonthPicker);
+        daysPicker = findViewById(R.id.daysPicker);
+        minutesPicker = findViewById(R.id.minutesPicker);
+        hoursPicker = findViewById(R.id.hoursPicker);
+        amPmPicker = findViewById(R.id.amPmPicker);
         dtSelector = findViewById(R.id.dtSelector);
 
         pickers.addAll(Arrays.asList(

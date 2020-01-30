@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.Resources.Theme;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
@@ -82,12 +82,12 @@ public class MaterialThemeInCodeFragment extends Fragment implements OnClickList
         View fragmentView = inflater.inflate(R.layout.fragment_material_theme_in_code, container, false);
 
         // Reference views
-        Button currentThemeDialogButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_current_theme);
-        Button greenThemeDialogButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_green_theme);
-        Button blueThemeDialogButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_blue_theme);
-        Button currentThemeSnackbarButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_current_theme);
-        Button greenThemeSnackbarButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_green_theme);
-        Button blueThemeSnackbarButton = (Button) fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_blue_theme);
+        Button currentThemeDialogButton = fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_current_theme);
+        Button greenThemeDialogButton = fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_green_theme);
+        Button blueThemeDialogButton = fragmentView.findViewById(R.id.fragment_material_theme_button_dialog_blue_theme);
+        Button currentThemeSnackbarButton = fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_current_theme);
+        Button greenThemeSnackbarButton = fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_green_theme);
+        Button blueThemeSnackbarButton = fragmentView.findViewById(R.id.fragment_material_theme_button_snackbar_blue_theme);
 
         // Set and bind data to views
         currentThemeDialogButton.setOnClickListener(this);

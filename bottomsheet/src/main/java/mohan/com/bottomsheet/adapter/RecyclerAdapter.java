@@ -1,6 +1,6 @@
 package mohan.com.bottomsheet.adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,8 +31,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         public ViewHolder(View v) {
             super(v);
-            mTextView = (TextView) v.findViewById(R.id.list_text);
-            mContainer = (RelativeLayout) v.findViewById(R.id.item_container);
+            mTextView = v.findViewById(R.id.list_text);
+            mContainer = v.findViewById(R.id.item_container);
 
         }
 

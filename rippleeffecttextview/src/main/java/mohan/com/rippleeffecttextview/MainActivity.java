@@ -2,7 +2,7 @@ package mohan.com.rippleeffecttextview;
 
 import android.graphics.Outline;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.buttonsContainer = (ViewGroup) findViewById(R.id.buttonsContainer);
+        this.buttonsContainer = findViewById(R.id.buttonsContainer);
 
         int buttonsSpacing = (int) getResources().getDimension(R.dimen.activity_horizontal_margin);
         int buttonSize = (int) getResources().getDimension(R.dimen.button_size);

@@ -1,7 +1,7 @@
 package mohan.com.datetimepicker2;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -219,7 +219,7 @@ public class TimePickerActivity extends AppCompatActivity implements View.OnClic
 
             StringBuffer sb = new StringBuffer();
 
-            sb.append(String.valueOf(hour));
+            sb.append(hour);
             sb.append(":");
             sb.append(format2LenStr(min));
             sb.append(":");

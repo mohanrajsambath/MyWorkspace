@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LevelListDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Html;
 import android.text.Spanned;
 import android.util.Log;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements Html.ImageGetter 
         String src="<p><img alt=\"\" src=\"https://i.pinimg.com/originals/19/b6/3c/19b63c6baa28dc6517ee7d620a0132a4.jpg\" />Test Attractions Test Attractions Test Attractions Test Attractions</p>";
         String img="<p><img alt=\"\" src=\"/site_media/photos/gallery/75b3fb14-3be6-4d14-88fd-1b9d979e716f.jpg\" style=\"height:508px; width:640px\" />Test Article, Test Article, Test Article, Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,Test Article,v</p>";
         Spanned spanned = Html.fromHtml(imgs, this, null);
-        mTv = (TextView) findViewById(R.id.text);
+        mTv = findViewById(R.id.text);
         mTv.setText(spanned);
     }
     @Override

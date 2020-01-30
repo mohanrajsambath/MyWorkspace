@@ -1,9 +1,9 @@
 package mohan.com.datetimepicker.dialog;
 
 import android.content.Context;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
@@ -59,9 +59,9 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
 
 
     private void init(View view) {
-        picker = (SingleDateAndTimePicker) view.findViewById(R.id.picker);
+        picker = view.findViewById(R.id.picker);
 
-        final TextView buttonOk = (TextView) view.findViewById(R.id.buttonOk);
+        final TextView buttonOk = view.findViewById(R.id.buttonOk);
         if (buttonOk != null) {
             buttonOk.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -90,7 +90,7 @@ public class SingleDateAndTimePickerDialog extends BaseDialog {
             }
         }
 
-        final TextView titleTextView = (TextView) view.findViewById(R.id.sheetTitle);
+        final TextView titleTextView = view.findViewById(R.id.sheetTitle);
         if (titleTextView != null) {
             titleTextView.setText(title);
 

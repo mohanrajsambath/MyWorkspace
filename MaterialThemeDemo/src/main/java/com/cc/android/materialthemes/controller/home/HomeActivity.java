@@ -3,12 +3,12 @@ package com.cc.android.materialthemes.controller.home;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabLayout;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -77,9 +77,9 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener {
 
         // Set the content view to a layout and reference views
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.activity_home_toolbar);
-        ViewPager viewPager = (ViewPager) findViewById(R.id.activity_home_pager);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.activity_home_tab_layout);
+        Toolbar toolbar = findViewById(R.id.activity_home_toolbar);
+        ViewPager viewPager = findViewById(R.id.activity_home_pager);
+        TabLayout tabLayout = findViewById(R.id.activity_home_tab_layout);
 
         // If this is the first creation, default state variables
         if (savedInstanceState == null) {
@@ -95,7 +95,7 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener {
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.activity_home_fab);
+        FloatingActionButton fab = findViewById(R.id.activity_home_fab);
         fab.setOnClickListener(this);
     }
 

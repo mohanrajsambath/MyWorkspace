@@ -1,7 +1,7 @@
 package mohan.com.datetimepicker2;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -164,7 +164,7 @@ public class DatePickerActivity extends AppCompatActivity implements View.OnClic
             sb.append("-");
             sb.append(format2LenStr(month));
             sb.append("-");
-            sb.append(String.valueOf(year));
+            sb.append(year);
             onDatePickCompleted(year, month, day, sb.toString());
         }
     }

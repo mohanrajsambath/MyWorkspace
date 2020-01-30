@@ -1,6 +1,6 @@
 package com.cc.uidynamicref;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +21,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         public TextView mTextView;
         public ViewHolder(View v) {
             super(v);
-            mTextView = (TextView) v.findViewById(R.id.row_tv);
+            mTextView = v.findViewById(R.id.row_tv);
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v)

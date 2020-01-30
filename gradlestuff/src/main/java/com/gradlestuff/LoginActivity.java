@@ -3,8 +3,8 @@ package com.gradlestuff;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -44,10 +44,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        edTxt_email=(EditText)findViewById(R.id.edTxt_email);
-        edTxt_password=(EditText)findViewById(R.id.edTxt_password);
-        imgVw_login_logo= (ImageView)findViewById(R.id.imgVw_login_logo);
-        button_login=(Button)findViewById(R.id.button_login);
+        edTxt_email= findViewById(R.id.edTxt_email);
+        edTxt_password= findViewById(R.id.edTxt_password);
+        imgVw_login_logo= findViewById(R.id.imgVw_login_logo);
+        button_login= findViewById(R.id.button_login);
         button_login.setOnClickListener(this);
 
 
@@ -138,10 +138,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Pattern pattern = Pattern.compile(regExpn,Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(inputStr);
 
-        if(matcher.matches())
-            return true;
-        else
-            return false;
+        return matcher.matches();
     }
 
 

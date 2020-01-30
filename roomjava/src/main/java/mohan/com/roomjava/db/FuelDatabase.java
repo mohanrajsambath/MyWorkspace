@@ -1,7 +1,7 @@
 package mohan.com.roomjava.db;
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.RoomDatabase;
+import androidx.room.Database;
+import androidx.room.RoomDatabase;
 
 import mohan.com.roomjava.dao.DaoAccess;
 import mohan.com.roomjava.model.MeasureFuel;

@@ -4,8 +4,8 @@ import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -40,8 +40,8 @@ public class DatePickerPopUpActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_datepickerpop);
-        txtVw_date_label_1 =(TextView) findViewById(R.id.txtVw_date_label_1);
-        txtVw_date_label_2 =(TextView) findViewById(R.id.txtVw_date_label_2);
+        txtVw_date_label_1 = findViewById(R.id.txtVw_date_label_1);
+        txtVw_date_label_2 = findViewById(R.id.txtVw_date_label_2);
         myDialog = new Dialog(this);
     }
 
@@ -51,10 +51,10 @@ public class DatePickerPopUpActivity extends AppCompatActivity {
         final mohan.com.datetimepicker.utils.SingleDateAndTimePicker mSingleDateAndTimePicker1;
         ImageView imgVw_close;
         myDialog.setContentView(R.layout.custompopup_datepicker);
-        txtVw_done =(TextView) myDialog.findViewById(R.id.txtVw_done);
-        imgVw_close =(ImageView) myDialog.findViewById(R.id.imgVw_close);
+        txtVw_done = myDialog.findViewById(R.id.txtVw_done);
+        imgVw_close = myDialog.findViewById(R.id.imgVw_close);
 
-        mSingleDateAndTimePicker1 =(mohan.com.datetimepicker.utils.SingleDateAndTimePicker) myDialog.findViewById(R.id.single_day_picker1);
+        mSingleDateAndTimePicker1 = myDialog.findViewById(R.id.single_day_picker1);
         mSingleDateAndTimePicker1.setVisibility(View.VISIBLE);
 
         if(isDateModified1){
@@ -100,10 +100,10 @@ public class DatePickerPopUpActivity extends AppCompatActivity {
         final mohan.com.datetimepicker.utils.SingleDateAndTimePicker mSingleDateAndTimePicker2;
         ImageView imgVw_close;
         myDialog.setContentView(R.layout.custompopup_datepicker);
-        txtVw_done =(TextView) myDialog.findViewById(R.id.txtVw_done);
-        imgVw_close =(ImageView) myDialog.findViewById(R.id.imgVw_close);
+        txtVw_done = myDialog.findViewById(R.id.txtVw_done);
+        imgVw_close = myDialog.findViewById(R.id.imgVw_close);
 
-        mSingleDateAndTimePicker2 =(mohan.com.datetimepicker.utils.SingleDateAndTimePicker) myDialog.findViewById(R.id.single_day_picker2);
+        mSingleDateAndTimePicker2 = myDialog.findViewById(R.id.single_day_picker2);
         mSingleDateAndTimePicker2.setVisibility(View.VISIBLE);
 
         if(isDateModified1){

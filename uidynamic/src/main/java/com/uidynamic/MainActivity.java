@@ -3,12 +3,12 @@ package com.uidynamic;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
+import androidx.annotation.NonNull;
+import com.google.android.material.navigation.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -71,21 +71,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void initViews() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbarTitle = (TextView) toolbar.findViewById(R.id.txt_toolbar_title);
-        img_add_content = (ImageView) findViewById(R.id.img_add_content);
-        img_content_filter = (ImageView) findViewById(R.id.img_content_filter);
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        toolbar = findViewById(R.id.toolbar);
+        toolbarTitle = toolbar.findViewById(R.id.txt_toolbar_title);
+        img_add_content = findViewById(R.id.img_add_content);
+        img_content_filter = findViewById(R.id.img_content_filter);
+        navigationView = findViewById(R.id.nav_view);
+        drawer = findViewById(R.id.drawer_layout);
         toolbarTitle.setText("Inbox");
         //setSupportActionBar(toolbar);
         navigationView.setNavigationItemSelectedListener(this);
         mMenuItem = navigationView.getMenu();
         header = navigationView.getHeaderView(0);
-        id_settings_bg_image = (ImageView) header.findViewById(R.id.id_settings_bg_image);
+        id_settings_bg_image = header.findViewById(R.id.id_settings_bg_image);
 
-        navAccountInfo = (TextView) header.findViewById(R.id.id_nav_account_info);
-        navUserName = (TextView) header.findViewById(R.id.id_nav_username);
+        navAccountInfo = header.findViewById(R.id.id_nav_account_info);
+        navUserName = header.findViewById(R.id.id_nav_username);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         toggle.syncState();

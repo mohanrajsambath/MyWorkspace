@@ -21,7 +21,7 @@ import android.util.AttributeSet;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class DottedSeekBar extends android.support.v7.widget.AppCompatSeekBar {
+public class DottedSeekBar extends androidx.appcompat.widget.AppCompatSeekBar {
 
     /** Int values which corresponds to dots */
     private int[] mDotsPositions = null;

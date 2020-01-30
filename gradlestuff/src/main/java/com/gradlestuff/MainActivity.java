@@ -4,15 +4,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
+import androidx.core.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void initiViews() {
-        txt_home=(TextView)findViewById(R.id.txt_home);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        txt_home= findViewById(R.id.txt_home);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,20 +87,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, null, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         drawer.openDrawer(GravityCompat.START);
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         View headerView=navigationView.getHeaderView(0);
-        LinearLayout sideNavLayout = (LinearLayout)headerView.findViewById(R.id.nav_header_main);
+        LinearLayout sideNavLayout = headerView.findViewById(R.id.nav_header_main);
         sideNavLayout.setBackgroundResource(R.color.material_gray_800);
-        ImageView drawerImage = (ImageView) headerView.findViewById(R.id.drawer_image);
-        TextView drawerUsername = (TextView) headerView.findViewById(R.id.drawer_username);
-        TextView drawerAccount = (TextView) headerView.findViewById(R.id.drawer_account);
+        ImageView drawerImage = headerView.findViewById(R.id.drawer_image);
+        TextView drawerUsername = headerView.findViewById(R.id.drawer_username);
+        TextView drawerAccount = headerView.findViewById(R.id.drawer_account);
         //drawerImage.setImageDrawable(R.drawable.ic_user);
         //drawerImage.setBackgroundResource(R.drawable.side_nav_bar);
         drawerImage.setImageResource(R.mipmap.ic_launcher_round);
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             ft.commit();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
     }
 

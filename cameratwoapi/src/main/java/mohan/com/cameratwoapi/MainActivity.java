@@ -20,9 +20,9 @@ import android.media.ImageReader;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_capture);
-        mTextureView = (AutoFitTextureView) findViewById(R.id.tvCapture);
-        btnRotate = (Button) findViewById(R.id.btnRotateCamera);
-        btnCapture = (Button) findViewById(R.id.btnCapture);
+        mTextureView = findViewById(R.id.tvCapture);
+        btnRotate = findViewById(R.id.btnRotateCamera);
+        btnCapture = findViewById(R.id.btnCapture);
         btnRotate.setOnClickListener(this);
         btnCapture.setOnClickListener(this);
 

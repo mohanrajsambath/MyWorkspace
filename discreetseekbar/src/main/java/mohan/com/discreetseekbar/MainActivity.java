@@ -1,7 +1,7 @@
 package mohan.com.discreetseekbar;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtVw_Size=(TextView)findViewById(R.id.txtVw_Size);
+        txtVw_Size= findViewById(R.id.txtVw_Size);
         txtVw_Size.setTextSize(mVal);
-        mCustomSeekBar=(SeekBar)findViewById(R.id.sb);
+        mCustomSeekBar= findViewById(R.id.sb);
         mCustomSeekBar.setProgress(6);
         mCustomSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

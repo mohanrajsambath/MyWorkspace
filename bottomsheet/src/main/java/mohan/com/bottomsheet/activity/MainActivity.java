@@ -2,9 +2,9 @@ package mohan.com.bottomsheet.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mParent = (CoordinatorLayout) findViewById(R.id.parent_container);
+        mParent = findViewById(R.id.parent_container);
         mParent.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
-        mRecyclerDialogBtn =(Button)findViewById(R.id.mRecyclerDialogBtn);
-        textView =(TextView)findViewById(R.id.textView);
+        mRecyclerDialogBtn = findViewById(R.id.mRecyclerDialogBtn);
+        textView = findViewById(R.id.textView);
         mRecyclerDialogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         bottomSheetDialog.setContentView(dialogSheetView);
         bottomSheetDialog.show();
 
-        RecyclerView mBottomSheetRecyclerLeft = (RecyclerView) dialogSheetView.findViewById(R.id.btm_recyclerview_left);
+        RecyclerView mBottomSheetRecyclerLeft = dialogSheetView.findViewById(R.id.btm_recyclerview_left);
         LinearLayoutManager mLayoutManagerLeft = new LinearLayoutManager(this);
         mBottomSheetRecyclerLeft.setLayoutManager(mLayoutManagerLeft);
 

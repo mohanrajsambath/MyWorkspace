@@ -1,7 +1,7 @@
 package com.cc.android.materialthemes.controller.theme;
 
-import android.support.annotation.StringRes;
-import android.support.annotation.StyleRes;
+import androidx.annotation.StringRes;
+import androidx.annotation.StyleRes;
 
 import com.cc.android.materialthemes.R;
 

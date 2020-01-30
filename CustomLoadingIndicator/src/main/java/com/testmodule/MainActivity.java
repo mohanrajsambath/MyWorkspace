@@ -1,12 +1,14 @@
 package com.testmodule;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.BounceInterpolator;
@@ -27,11 +29,15 @@ import com.agrawalsuneet.loaderspack.loaders.RotatingCircularSticksLoader;
 import com.agrawalsuneet.loaderspack.loaders.SearchLoader;
 import com.agrawalsuneet.loaderspack.loaders.WifiLoader;
 
+import java.util.Arrays;
+
 public class MainActivity extends AppCompatActivity {
+    String TAG="MainActivity";
 
     public LinearLayout containterLayout;
     String mreferSite="https://agrawalsuneet.github.io/opensourcecontribution/";
     String mReferenceLink="https://github.com/agrawalsuneet/LoadersPack-Android";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Log.e(TAG, "CPU_ABI : " + Build.CPU_ABI);
+        Log.e(TAG, "CPU_ABI2 : " + Build.CPU_ABI2);
+        Log.e(TAG, "OS.ARCH : " + System.getProperty("os.arch"));
+
+        Log.e(TAG, "SUPPORTED_ABIS : " + Arrays.toString(Build.SUPPORTED_ABIS));
+        Log.e(TAG, "SUPPORTED_32_BIT_ABIS : " + Arrays.toString(Build.SUPPORTED_32_BIT_ABIS));
+        Log.e(TAG, "SUPPORTED_64_BIT_ABIS : " + Arrays.toString(Build.SUPPORTED_64_BIT_ABIS));
 
         setDifferentLoader();
     }

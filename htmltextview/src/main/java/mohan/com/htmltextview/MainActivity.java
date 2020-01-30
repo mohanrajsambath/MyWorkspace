@@ -1,7 +1,7 @@
 package mohan.com.htmltextview;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.text.Html;
 import android.widget.TextView;
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             text = "No data available";
         }
 
-        TextView test = (TextView) findViewById(R.id.test);
+        TextView test = findViewById(R.id.test);
         test.setText(Html.fromHtml(text, null, new MyTagHandler()));
     }
 }

@@ -3,9 +3,9 @@ package mohan.com.datetimepicker.dialog;
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.StateListDrawable;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.TextView;
@@ -72,15 +72,15 @@ public class DoubleDateAndTimePickerDialog extends BaseDialog {
     }
 
     private void init(View view) {
-        buttonTab0 = (TextView) view.findViewById(R.id.buttonTab0);
-        buttonTab1 = (TextView) view.findViewById(R.id.buttonTab1);
-        pickerTab0 = (SingleDateAndTimePicker) view.findViewById(R.id.picker_tab_0);
-        pickerTab1 = (SingleDateAndTimePicker) view.findViewById(R.id.picker_tab_1);
+        buttonTab0 = view.findViewById(R.id.buttonTab0);
+        buttonTab1 = view.findViewById(R.id.buttonTab1);
+        pickerTab0 = view.findViewById(R.id.picker_tab_0);
+        pickerTab1 = view.findViewById(R.id.picker_tab_1);
         tab0 = view.findViewById(R.id.tab0);
         tab1 = view.findViewById(R.id.tab1);
 
         final View titleLayout = view.findViewById(R.id.sheetTitleLayout);
-        final TextView titleTextView = (TextView) view.findViewById(R.id.sheetTitle);
+        final TextView titleTextView = view.findViewById(R.id.sheetTitle);
         if(title != null) {
             if (titleTextView != null) {
                 titleTextView.setText(title);
@@ -148,7 +148,7 @@ public class DoubleDateAndTimePickerDialog extends BaseDialog {
         //noinspection deprecation
         buttonTab1.setBackgroundDrawable(getTabsListDrawable());
 
-        final TextView buttonOk = (TextView) view.findViewById(R.id.buttonOk);
+        final TextView buttonOk = view.findViewById(R.id.buttonOk);
         if (buttonOk != null) {
             if (buttonOkText != null) {
                 buttonOk.setText(buttonOkText);

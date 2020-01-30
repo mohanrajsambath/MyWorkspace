@@ -2,8 +2,8 @@ package com.fontawesomeapp.activity;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatTextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -39,18 +39,18 @@ private AppCompatTextView txTw_Video;
     }
 
     private void initViews() {
-        icons_container =(RelativeLayout)findViewById(R.id.icons_container);
-        txTw_circle_outside =(TextView)findViewById(R.id.txTw_circle_outside);
-        txTw_circle_inside =(TextView)findViewById(R.id.txTw_circle_inside);
-        txTw_flipCamera =(TextView)findViewById(R.id.txTw_flipCamera);
-        txTw_scriptEdit =(TextView)findViewById(R.id.txTw_scriptEdit);
-        txtVw_close =(TextView)findViewById(R.id.txtVw_close);
-        txtVw_settings =(TextView)findViewById(R.id.txtVw_settings);
+        icons_container = findViewById(R.id.icons_container);
+        txTw_circle_outside = findViewById(R.id.txTw_circle_outside);
+        txTw_circle_inside = findViewById(R.id.txTw_circle_inside);
+        txTw_flipCamera = findViewById(R.id.txTw_flipCamera);
+        txTw_scriptEdit = findViewById(R.id.txTw_scriptEdit);
+        txtVw_close = findViewById(R.id.txtVw_close);
+        txtVw_settings = findViewById(R.id.txtVw_settings);
 
-        txTw_Video =(AppCompatTextView)findViewById(R.id.txTw_Video);
-        txTw_audio =(TextView)findViewById(R.id.txTw_audio);
-        txTw_library =(TextView)findViewById(R.id.txTw_library);
-        txTw_link =(TextView)findViewById(R.id.txTw_link);
+        txTw_Video = findViewById(R.id.txTw_Video);
+        txTw_audio = findViewById(R.id.txTw_audio);
+        txTw_library = findViewById(R.id.txTw_library);
+        txTw_link = findViewById(R.id.txTw_link);
         //Typeface typeFace = Typeface.createFromAsset(getAssets(), "<file name>");
         txTw_circle_outside.setTypeface(lightIconFont);
         txTw_flipCamera.setTypeface(lightIconFont);

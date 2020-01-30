@@ -1,7 +1,7 @@
 package com.gradlestuff.adapters;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,9 +36,9 @@ public class RecycleAppAdapter extends RecyclerView.Adapter<RecycleAppAdapter.My
         public ImageView app_icon;
         public MyViewHolder(View itemView) {
             super(itemView);
-            list_app_name = (TextView) itemView.findViewById(R.id.list_app_name);
-            list_app_desc = (TextView) itemView.findViewById(R.id.list_app_desc);
-            app_icon = (ImageView) itemView.findViewById(R.id.app_icon);
+            list_app_name = itemView.findViewById(R.id.list_app_name);
+            list_app_desc = itemView.findViewById(R.id.list_app_desc);
+            app_icon = itemView.findViewById(R.id.app_icon);
         }
     }
 

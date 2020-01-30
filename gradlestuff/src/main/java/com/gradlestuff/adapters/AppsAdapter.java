@@ -7,8 +7,8 @@ package com.gradlestuff.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,10 +41,10 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
             super(view);
 
-            cardView = (CardView) view.findViewById(R.id.card_view);
-            imageView = (ImageView) view.findViewById(R.id.imageview);
-            textView_App_Name = (TextView) view.findViewById(R.id.Apk_Name);
-            textView_App_Package_Name = (TextView) view.findViewById(R.id.Apk_Package_Name);
+            cardView = view.findViewById(R.id.card_view);
+            imageView = view.findViewById(R.id.imageview);
+            textView_App_Name = view.findViewById(R.id.Apk_Name);
+            textView_App_Package_Name = view.findViewById(R.id.Apk_Package_Name);
         }
     }
 
@@ -63,7 +63,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
         ApkInfoExtractor apkInfoExtractor = new ApkInfoExtractor(context1);
 
-        final String ApplicationPackageName = (String) stringList.get(position);
+        final String ApplicationPackageName = stringList.get(position);
         String ApplicationLabelName = apkInfoExtractor.GetAppName(ApplicationPackageName);
         Drawable drawable = apkInfoExtractor.getAppIconByPackageName(ApplicationPackageName);
 

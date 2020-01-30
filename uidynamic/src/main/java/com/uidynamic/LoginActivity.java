@@ -3,8 +3,8 @@ package com.uidynamic;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,9 +39,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        edTxt_email=(EditText)findViewById(R.id.edTxt_email);
-        edTxt_password=(EditText)findViewById(R.id.edTxt_password);
-        button_login=(Button)findViewById(R.id.button_login);
+        edTxt_email= findViewById(R.id.edTxt_email);
+        edTxt_password= findViewById(R.id.edTxt_password);
+        button_login= findViewById(R.id.button_login);
 
         button_login.setOnClickListener(this);
 
@@ -97,9 +97,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Pattern pattern = Pattern.compile(regExpn,Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(inputStr);
 
-        if(matcher.matches())
-            return true;
-        else
-            return false;
+        return matcher.matches();
     }
 }

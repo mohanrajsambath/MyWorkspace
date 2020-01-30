@@ -1,10 +1,13 @@
 package com.cc.uidynamicref;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,11 +19,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements ListView.OnItemClickListener
 {
-    private android.support.v7.widget.RecyclerView mRecyclerView;
-    private android.support.v7.widget.RecyclerView.Adapter mAdapter;
-    private android.support.v7.widget.RecyclerView.LayoutManager mLayoutManager;
-    private android.support.v7.widget.Toolbar toolbar;
-    private android.support.v4.widget.DrawerLayout drawerLayout;
+    private RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+    private androidx.appcompat.widget.Toolbar toolbar;
+    private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private ListView leftDrawerList;
     private ArrayAdapter<String> navigationDrawerAdapter;
@@ -95,13 +98,13 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
     private void setRef()
     {
     	// create reference to the xml views
-        mRecyclerView = (android.support.v7.widget.RecyclerView) findViewById(R.id.my_recycler_view);
-        fab = (Button) findViewById(R.id.addButton);
-        drawerLayout = (android.support.v4.widget.DrawerLayout) findViewById(R.id.drawer_layout);
+        mRecyclerView = findViewById(R.id.my_recycler_view);
+        fab = findViewById(R.id.addButton);
+        drawerLayout = findViewById(R.id.drawer_layout);
         drawerLayout.setStatusBarBackground(R.color.primarydark);
 
-        toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
-        leftDrawerList = (ListView) findViewById(R.id.list_drawer);
+        toolbar = findViewById(R.id.toolbar);
+        leftDrawerList = findViewById(R.id.list_drawer);
 
         View list_header = getLayoutInflater().inflate(R.layout.drawerlist_header, null);
         leftDrawerList.addHeaderView(list_header);

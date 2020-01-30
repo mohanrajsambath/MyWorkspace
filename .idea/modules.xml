@@ -21,6 +21,7 @@
       <module fileurl="file://$PROJECT_DIR$/htmltextimg/htmltextimg.iml" filepath="$PROJECT_DIR$/htmltextimg/htmltextimg.iml" />
       <module fileurl="file://$PROJECT_DIR$/htmltextview/htmltextview.iml" filepath="$PROJECT_DIR$/htmltextview/htmltextview.iml" />
       <module fileurl="file://$PROJECT_DIR$/jetpackapp/jetpackapp.iml" filepath="$PROJECT_DIR$/jetpackapp/jetpackapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediaplayer/mediaplayer.iml" filepath="$PROJECT_DIR$/mediaplayer/mediaplayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" filepath="$PROJECT_DIR$/multiandsingleselectionrecyclerview/multiandsingleselectionrecyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/mykotlin/mykotlin.iml" filepath="$PROJECT_DIR$/mykotlin/mykotlin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mythemeapp/mythemeapp.iml" filepath="$PROJECT_DIR$/mythemeapp/mythemeapp.iml" />

@@ -2,9 +2,10 @@ package com.gradlestuff.fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -70,7 +71,7 @@ public class StoreFragment extends Fragment {
         private final List<Fragment> mFragments = new ArrayList<>();
         private final List<String> mFragmentTitles = new ArrayList<>();
 
-        public Adapter(android.support.v4.app.FragmentManager fm) {
+        public Adapter(FragmentManager fm) {
             super(fm);
         }
 
